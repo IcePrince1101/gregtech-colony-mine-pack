@@ -1,0 +1,13 @@
+name = "Gendustry: CE"
+filename = "gendustry-1.20.1-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2zkSGMyK/versions/B0WsdVrj/gendustry-1.20.1-1.0.4.jar"
+hash-format = "sha512"
+hash = "a065d3ef82ca685a26e0a94d5a352ca013eb6503857b55e13d43768860491c3ebc0b8a5c1e0f380e98d37bd3252993df9189a828507b555ad893f772e5f61742"
+
+[update]
+[update.modrinth]
+mod-id = "2zkSGMyK"
+version = "B0WsdVrj"

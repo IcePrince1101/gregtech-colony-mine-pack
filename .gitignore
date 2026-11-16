@@ -1,0 +1,18 @@
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Pack exports and local packwiz cache
+*.mrpack
+.packwiz/
+
+# Local Minecraft runs
+run/
+logs/
+crash-reports/
+*.log
+server/
+
+# Mod jars are downloaded by packwiz-installer
+*.jar

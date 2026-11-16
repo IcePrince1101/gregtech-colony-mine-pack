@@ -1,0 +1,31 @@
+name: Packwiz
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-and-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@v0.0.0-20261014010756-170b22d78595
+
+      - name: Check the pack index
+        run: |
+          packwiz refresh
+          git diff --exit-code
+
+      - name: Export Modrinth pack
+        run: packwiz modrinth export -o gregtech-colony-0.1.0.mrpack
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gregtech-colony-mrpack
+          path: gregtech-colony-0.1.0.mrpack
