@@ -1,0 +1,13 @@
+name = "Forestry: CE"
+filename = "forestry-1.20.1-2.11.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2oORTOi2/versions/dvKfwvis/forestry-1.20.1-2.11.2.jar"
+hash-format = "sha512"
+hash = "681aa8b0e76d007e8dd301c9669dcbea4264a8ad8a0b96e1ead9f6fafbf1f11259c6779f31c62f84c918afa38c1a320bf98cc60ccd97eb5b3ae029625eac5eae"
+
+[update]
+[update.modrinth]
+mod-id = "2oORTOi2"
+version = "dvKfwvis"
