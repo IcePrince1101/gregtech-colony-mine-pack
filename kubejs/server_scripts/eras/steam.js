@@ -18,6 +18,9 @@ ServerEvents.recipes(function (event) {
   event.remove({ output: 'create:cogwheel' })
   event.shapeless('create:cogwheel', ['create:shaft', '#minecraft:planks', 'gtceu:small_bronze_gear'])
     .id('gregtech_colony:cogwheel')
+  // Greate снимает ванильные рецепты большой шестерни и не отдаёт create:large_cogwheel.
+  event.shapeless('create:large_cogwheel', ['create:cogwheel', '#minecraft:planks'])
+    .id('gregtech_colony:large_cogwheel')
 
   event.remove({ output: 'gtceu:resin_circuit_board' })
   event.custom({
@@ -115,4 +118,65 @@ ServerEvents.recipes(function (event) {
   event.recipes.gtceu.steam_boiler('peat')
     .itemInputs('forestry:peat')
     .duration(300)
+
+  // Поезда Create: не с первых досок и не с MV. Рельсы и корпус дороги требуют бронзу.
+  event.remove({ output: 'create:railway_casing' })
+  event.custom({
+    type: 'create:item_application',
+    ingredients: [
+      { item: 'create:brass_casing' },
+      { item: 'gtceu:bronze_plate' }
+    ],
+    results: [{ item: 'create:railway_casing' }]
+  }).id('gregtech_colony:railway_casing')
+
+  event.remove({ id: 'create:sequenced_assembly/track' })
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: { tag: 'create:sleepers' },
+    transitionalItem: { item: 'create:incomplete_track' },
+    loops: 1,
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [
+          { item: 'create:incomplete_track' },
+          { item: 'gtceu:bronze_nugget' }
+        ],
+        results: [{ item: 'create:incomplete_track' }]
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          { item: 'create:incomplete_track' },
+          { item: 'gtceu:bronze_nugget' }
+        ],
+        results: [{ item: 'create:incomplete_track' }]
+      },
+      {
+        type: 'create:pressing',
+        ingredients: [{ item: 'create:incomplete_track' }],
+        results: [{ item: 'create:incomplete_track' }]
+      }
+    ],
+    results: [{ item: 'create:track' }]
+  }).id('gregtech_colony:track')
+
+  event.remove({ output: 'create:controls' })
+  event.shaped('create:controls', ['B', 'C', 'G'], {
+    B: 'minecraft:lever',
+    C: 'create:railway_casing',
+    G: '#forge:gears/bronze'
+  }).id('gregtech_colony:train_controls')
+
+  event.remove({ output: 'create:steam_engine' })
+  event.shaped('create:steam_engine', ['P', 'A', 'C'], {
+    P: 'gtceu:bronze_plate',
+    A: 'create:andesite_alloy',
+    C: '#forge:storage_blocks/copper'
+  }).id('gregtech_colony:steam_engine')
+
+  event.remove({ output: 'create:schedule' })
+  event.shapeless('4x create:schedule', ['gtceu:bronze_plate', 'minecraft:paper'])
+    .id('gregtech_colony:schedule')
 })

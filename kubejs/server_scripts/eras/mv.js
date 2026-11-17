@@ -54,12 +54,14 @@ ServerEvents.recipes(function (event) {
     A: 'gtceu:mv_robot_arm'
   }).id('gregtech_colony:mv_assembler')
 
-  event.remove({ id: 'ae2:network/blocks/controller' })
-  event.shaped('ae2:controller', ['ABA', 'BCB', 'ABA'], {
-    A: 'ae2:smooth_sky_stone_block',
-    B: 'ae2:fluix_crystal',
-    C: 'gtceu:good_electronic_circuit'
-  }).id('gregtech_colony:me_controller')
+  event.remove({ id: 'forestry:apiary' })
+  event.shaped('forestry:apiary', ['SSS', 'PCP', 'IBI'], {
+    S: '#minecraft:wooden_slabs',
+    P: '#minecraft:planks',
+    C: 'forestry:impregnated_casing',
+    I: 'gtceu:good_electronic_circuit',
+    B: 'gtceu:bronze_plate'
+  }).id('gregtech_colony:forestry_apiary')
 
   event.remove({ id: 'gendustry:mutatron' })
   event.shaped('gendustry:mutatron', ['RHI', 'MSR', 'RCI'], {

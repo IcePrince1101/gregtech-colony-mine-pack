@@ -28,11 +28,62 @@ ServerEvents.recipes(function (event) {
 
   event.remove({ output: 'buildcraftcore:engine_redstone' })
   event.shaped('buildcraftcore:engine_redstone', ['WWW', ' A ', 'GPG'], {
-    W: '#minecraft:planks',
+    W: 'gtceu:bronze_plate',
     A: 'create:andesite_casing',
-    G: '#forge:gears/wood',
+    G: '#forge:gears/bronze',
     P: 'minecraft:piston'
   }).id('gregtech_colony:bc_redstone_engine')
+
+  event.remove({ output: 'buildcraftenergy:engine_stone' })
+  event.shaped('buildcraftenergy:engine_stone', ['WWW', ' A ', 'GPG'], {
+    W: 'gtceu:bronze_plate',
+    A: 'create:andesite_casing',
+    G: '#forge:gears/bronze',
+    P: 'minecraft:piston'
+  }).id('gregtech_colony:bc_stirling_engine')
+
+  event.remove({ output: 'buildcraftsilicon:laser' })
+  event.shaped('buildcraftsilicon:laser', ['RHO', 'RDC', 'RRO'], {
+    R: 'minecraft:redstone',
+    H: 'gtceu:lv_machine_hull',
+    O: 'minecraft:obsidian',
+    D: 'minecraft:diamond',
+    C: 'gtceu:basic_electronic_circuit'
+  }).id('gregtech_colony:bc_laser')
+
+  event.remove({ output: 'buildcraftsilicon:assembly_table' })
+  event.shaped('buildcraftsilicon:assembly_table', ['ODO', 'CRC', 'OHO'], {
+    O: 'minecraft:obsidian',
+    D: 'minecraft:diamond',
+    C: 'gtceu:basic_electronic_circuit',
+    R: 'minecraft:redstone',
+    H: 'gtceu:lv_machine_hull'
+  }).id('gregtech_colony:bc_assembly_table')
+
+  // Чипсеты собираются только на столе. Базовая схема кладётся в каждый,
+  // поэтому гейты, которые делаются из чипсета, тоже требуют LV.
+  let chipsets = [
+    ['buildcraftsilicon:assembly/redstone_chipset', 10000000000, [{ tag: 'forge:dusts/redstone' }], 'buildcraftsilicon:redstone_chipset/red'],
+    ['buildcraftsilicon:assembly/iron_chipset', 20000000000, [{ tag: 'forge:dusts/redstone' }, { tag: 'forge:ingots/iron' }], 'buildcraftsilicon:redstone_chipset/iron'],
+    ['buildcraftsilicon:assembly/gold_chipset', 40000000000, [{ tag: 'forge:dusts/redstone' }, { tag: 'forge:ingots/gold' }], 'buildcraftsilicon:redstone_chipset/gold'],
+    ['buildcraftsilicon:assembly/quartz_chipset', 60000000000, [{ tag: 'forge:dusts/redstone' }, { tag: 'forge:gems/quartz' }], 'buildcraftsilicon:redstone_chipset/quartz'],
+    ['buildcraftsilicon:assembly/diamond_chipset', 80000000000, [{ tag: 'forge:dusts/redstone' }, { tag: 'forge:gems/diamond' }], 'buildcraftsilicon:redstone_chipset/diamond']
+  ]
+  for (let i = 0; i < chipsets.length; i++) {
+    let row = chipsets[i]
+    event.remove({ id: row[0] })
+    let ingredients = row[2].concat([{ item: 'gtceu:basic_electronic_circuit' }])
+    let counts = []
+    for (let j = 0; j < ingredients.length; j++) counts.push(1)
+    event.custom({
+      type: 'buildcraftsilicon:assembly',
+      MJ: row[1],
+      group: 'buildcraftsilicon:chipsets',
+      ingredient_counts: counts,
+      ingredients: ingredients,
+      result: { item: row[3] }
+    }).id('gregtech_colony:bc_' + row[0].substring(row[0].lastIndexOf('/') + 1))
+  }
 
   event.remove({ output: 'buildcraftbuilders:quarry' })
   event.shaped('buildcraftbuilders:quarry', ['CMC', 'MDM', 'PHP'], {

@@ -1,7 +1,8 @@
 // Откат: удалить этот файл и строку thermal в client_scripts/hide_duplicates.js.
 // Thermal Expansion 11.0.1. Дубли машин GregTech убираются.
 // Каркаса машины, rf_coil и ячеек в этих jar нет, поэтому оставленные машины
-// получают новый верстачный рецепт на корпусе LV и оловянном проводе.
+// получают новый верстачный рецепт. Стирлинг, сжатие и магма остаются на LV.
+// Фито-инсолятор, варщик, сборщик и остальные динамо — корпус и схема MV.
 
 ServerEvents.recipes(function (event) {
   let removed = [
@@ -27,8 +28,10 @@ ServerEvents.recipes(function (event) {
     event.shaped(output, pattern, key).id('gregtech_colony:' + output.replace(':', '_'))
   }
 
-  let wire = '#forge:wires/tin'
-  let hull = 'gtceu:lv_machine_hull'
+  // forge:wires/tin в GTCEu пустой. Одиночный провод — предмет gtceu:tin_single_wire.
+  let wire = 'gtceu:tin_single_wire'
+  let mvHull = 'gtceu:mv_machine_hull'
+  let mvCircuit = 'gtceu:good_electronic_circuit'
   let ironGear = '#forge:gears/iron'
   let goldGear = '#forge:gears/gold'
 
@@ -41,26 +44,27 @@ ServerEvents.recipes(function (event) {
   kept('thermal:dynamo_magmatic', [' C ', 'IGI', 'YXY'], {
     C: wire, G: goldGear, I: '#forge:ingots/invar', X: '#forge:dusts/redstone', Y: 'minecraft:magma_block'
   })
-  kept('thermal:dynamo_numismatic', [' C ', 'IGI', 'YXY'], {
-    C: wire, G: goldGear, I: '#forge:ingots/gold', X: '#forge:dusts/redstone', Y: 'minecraft:gold_block'
+  // Стирлинг, сжатие и магма остаются LV. Остальные динамо и машины схемы — MV.
+  kept('thermal:dynamo_numismatic', [' C ', 'HGH', 'YXY'], {
+    C: mvCircuit, G: goldGear, H: mvHull, X: '#forge:dusts/redstone', Y: 'minecraft:gold_block'
   })
-  kept('thermal:dynamo_lapidary', [' C ', 'IGI', 'YXY'], {
-    C: wire, G: goldGear, I: '#forge:ingots/gold', X: '#forge:dusts/redstone', Y: '#forge:gems/lapis'
+  kept('thermal:dynamo_lapidary', [' C ', 'HGH', 'YXY'], {
+    C: mvCircuit, G: goldGear, H: mvHull, X: '#forge:dusts/redstone', Y: '#forge:gems/lapis'
   })
-  kept('thermal:dynamo_disenchantment', [' C ', 'IGI', 'YXY'], {
-    C: wire, G: goldGear, I: '#forge:ingots/electrum', X: 'minecraft:book', Y: 'minecraft:experience_bottle'
+  kept('thermal:dynamo_disenchantment', [' C ', 'HGH', 'YXY'], {
+    C: mvCircuit, G: goldGear, H: mvHull, X: 'minecraft:book', Y: 'minecraft:experience_bottle'
   })
-  kept('thermal:dynamo_gourmand', [' C ', 'IGI', 'YXY'], {
-    C: wire, G: ironGear, I: '#forge:ingots/copper', X: 'minecraft:cooked_beef', Y: 'minecraft:bowl'
+  kept('thermal:dynamo_gourmand', [' C ', 'HGH', 'YXY'], {
+    C: mvCircuit, G: ironGear, H: mvHull, X: 'minecraft:cooked_beef', Y: 'minecraft:bowl'
   })
-  kept('thermal:machine_insolator', [' X ', 'YCY', 'IPI'], {
-    X: 'minecraft:dirt', Y: '#forge:glass', C: hull, I: goldGear, P: wire
+  kept('thermal:machine_insolator', [' X ', 'YHY', 'CPC'], {
+    X: 'minecraft:dirt', Y: '#forge:glass', H: mvHull, C: mvCircuit, P: wire
   })
-  kept('thermal:machine_brewer', [' X ', 'YCY', 'IPI'], {
-    X: 'minecraft:brewing_stand', Y: '#forge:glass', C: hull, I: ironGear, P: wire
+  kept('thermal:machine_brewer', [' X ', 'YHY', 'CPC'], {
+    X: 'minecraft:brewing_stand', Y: '#forge:glass', H: mvHull, C: mvCircuit, P: wire
   })
-  kept('thermal:machine_crafter', [' X ', 'YCY', 'IPI'], {
-    X: 'minecraft:crafting_table', Y: 'gtceu:basic_electronic_circuit', C: hull, I: ironGear, P: wire
+  kept('thermal:machine_crafter', [' X ', 'YHY', 'CPC'], {
+    X: 'minecraft:crafting_table', Y: '#forge:glass', H: mvHull, C: mvCircuit, P: wire
   })
 
   event.custom({

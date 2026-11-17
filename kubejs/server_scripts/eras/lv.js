@@ -17,6 +17,45 @@ ServerEvents.recipes(function (event) {
     C: 'create:belt_connector'
   }).id('gregtech_colony:lv_conveyor')
 
+  event.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
+  event.custom({
+    type: 'create:sequenced_assembly',
+    ingredient: { tag: 'forge:plates/gold' },
+    transitionalItem: { item: 'create:incomplete_precision_mechanism' },
+    loops: 5,
+    sequence: [
+      {
+        type: 'create:deploying',
+        ingredients: [
+          { item: 'create:incomplete_precision_mechanism' },
+          { item: 'gtceu:basic_electronic_circuit' }
+        ],
+        results: [{ item: 'create:incomplete_precision_mechanism' }]
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          { item: 'create:incomplete_precision_mechanism' },
+          { item: 'create:cogwheel' }
+        ],
+        results: [{ item: 'create:incomplete_precision_mechanism' }]
+      },
+      {
+        type: 'create:deploying',
+        ingredients: [
+          { item: 'create:incomplete_precision_mechanism' },
+          { item: 'create:large_cogwheel' }
+        ],
+        results: [{ item: 'create:incomplete_precision_mechanism' }]
+      }
+    ],
+    results: [
+      { chance: 120.0, item: 'create:precision_mechanism' },
+      { chance: 8.0, item: 'create:andesite_alloy' },
+      { item: 'minecraft:gold_nugget' }
+    ]
+  }).id('gregtech_colony:precision_mechanism')
+
   event.remove({ type: 'create:mixing', output: 'create:brass_ingot' })
   event.remove({ id: 'create:mixing/brass_ingot' })
 
