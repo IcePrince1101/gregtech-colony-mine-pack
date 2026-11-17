@@ -3,6 +3,7 @@ README.md
 .github/**
 .packwizignore
 .gitignore
+tools/**
 
 # Local installer logs
 *.log

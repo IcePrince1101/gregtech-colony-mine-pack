@@ -1,0 +1,178 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "mv"
+	group: "000000000000309F"
+	icon: "gtceu:mv_machine_hull"
+	id: "00000000000030FB"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000000302D"
+				"000000000000302F"
+			]
+			description: [
+				"MV, 128 EU/т. Машины LV в эту сеть без трансформатора сгорают. Корпус снова только каркас: рецепт машины просит детали своего уровня и схему классом выше базовой."
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "0000000000003033"
+			rewards: [
+				{
+					id: "00000000000030C2"
+					table_id: 12441
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030C3"
+					stage: "era_mv"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Среднее напряжение"
+			tasks: [
+				{
+					id: "0000000000003034"
+					type: "item"
+					item: "gtceu:mv_machine_hull"
+				}
+			]
+			title: "Корпус MV"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"0000000000003033"
+			]
+			description: [
+				"Хорошая схема не крафтится стопкой базовых. У неё свой маршрут через пластины и компоненты MV. Рецепты HV смотрят уже на следующий класс, так что запас хороших схем не открывает высокую эпоху сам по себе."
+			]
+			icon: "gtceu:good_electronic_circuit"
+			id: "0000000000003035"
+			rewards: [
+				{
+					id: "00000000000030C4"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Класс MV"
+			tasks: [
+				{
+					id: "0000000000003036"
+					type: "item"
+					item: "gtceu:good_electronic_circuit"
+				}
+			]
+			title: "Хорошая электронная схема"
+			x: 0
+			y: 1.6f
+		}
+		{
+			dependencies: [
+				"0000000000003033"
+			]
+			description: [
+				"Кристалл сертиса, сырьё Applied Energistics. Сеть ME хранит и крафтит, но не производит EU и не заменяет химию. Имеет смысл после того, как LV-цех уже что-то производит пакетами, иначе нечего класть в ячейки."
+			]
+			icon: "ae2:certus_quartz_crystal"
+			id: "0000000000003037"
+			rewards: [
+				{
+					id: "00000000000030C5"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Материя для ME"
+			tasks: [
+				{
+					id: "0000000000003038"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+				}
+			]
+			title: "Сертис"
+			x: -2.6f
+			y: 1.6f
+		}
+		{
+			dependencies: [
+				"0000000000003037"
+			]
+			description: [
+				"Энергоприёмник переводит внешнюю энергию в сеть AE2. Канал и сторона имеют значение: неправильный ввод просто не питает контроллер. Это инфраструктура, не генератор."
+			]
+			icon: "ae2:energy_acceptor"
+			id: "0000000000003039"
+			rewards: [
+				{
+					id: "00000000000030C6"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "ME не питается от котла"
+			tasks: [
+				{
+					id: "000000000000303A"
+					type: "item"
+					item: "ae2:energy_acceptor"
+				}
+			]
+			title: "Приёмник энергии"
+			x: -2.6f
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"0000000000003039"
+				"0000000000003035"
+			]
+			description: [
+				"Контроллер держит каналы и устройства. Без него сеть из кабелей не становится системой автокрафта. Он не выдаёт схемы GregTech и не обходит сборщик."
+			]
+			icon: "ae2:controller"
+			id: "000000000000303B"
+			rewards: [
+				{
+					id: "00000000000030C7"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Мозг сети, не фабрика"
+			tasks: [
+				{
+					id: "000000000000303C"
+					type: "item"
+					item: "ae2:controller"
+				}
+			]
+			title: "Контроллер ME"
+			x: -2.6f
+			y: 4.8f
+		}
+	]
+	subtitle: "MV"
+	title: "Среднее напряжение"
+}

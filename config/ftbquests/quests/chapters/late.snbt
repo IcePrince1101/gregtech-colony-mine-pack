@@ -1,0 +1,86 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "late"
+	group: "000000000000309F"
+	icon: "gtceu:luv_machine_hull"
+	id: "00000000000030FF"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000003047"
+			]
+			description: [
+				"LuV начинает вторую половину таблицы напряжений: ZPM, UV, UHV и выше строятся вокруг чистых комнат, платин, наквады и вейпа. Эта книга не расписывает каждый мультиблок тех эпох."
+				""
+				"Смысл отметки в другом: поздний данж и старшие материалы больше не считаются чужими. Маршрут плат тот же, что раньше, только класс процессора снова шагает вверх, вплоть до мокрого вейпа."
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "0000000000003049"
+			rewards: [
+				{
+					id: "00000000000030D1"
+					table_id: 12445
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030D2"
+					stage: "era_late"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Дальше обзор, не маршрут"
+			tasks: [
+				{
+					id: "000000000000304A"
+					type: "item"
+					item: "gtceu:luv_machine_hull"
+				}
+			]
+			title: "Корпус LuV"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"0000000000003049"
+			]
+			description: [
+				"UEV, UIV, UXV, OpV и MAX существуют в моде как продолжение той же логики: корпус, энергия, схема, обслуживание. Отдельного сюжета под каждый из них здесь нет."
+				""
+				"Если партия дошла до LuV, книга своё дело сделала. Дальше ориентир, JEI и уже построенный цех, а не новый пошаговый текст."
+			]
+			icon: "gtceu:uhv_machine_hull"
+			id: "000000000000304B"
+			rewards: [
+				{
+					id: "00000000000030D3"
+					table_id: 12446
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Напряжения не кончаются корпусом"
+			tasks: [
+				{
+					id: "000000000000304C"
+					type: "checkmark"
+				}
+			]
+			title: "Дальше UHV"
+			x: 0
+			y: 1.6f
+		}
+	]
+	subtitle: "Обзор конца таблицы"
+	title: "LuV и дальше"
+}

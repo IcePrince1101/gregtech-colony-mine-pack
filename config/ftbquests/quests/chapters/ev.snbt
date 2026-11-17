@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "ev"
+	group: "000000000000309F"
+	icon: "gtceu:ev_machine_hull"
+	id: "00000000000030FD"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000000303F"
+			]
+			description: [
+				"EV, 2048 EU/т. Потери в кабеле и тепло катушек становятся конструкцией, а не справкой. Чистая комната и обслуживание мультиблоков, которые конфиг не отключал, здесь уже обычный режим, не сюрприз."
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "0000000000003041"
+			rewards: [
+				{
+					id: "00000000000030CB"
+					table_id: 12443
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Экстремальное напряжение"
+			tasks: [
+				{
+					id: "0000000000003042"
+					type: "item"
+					item: "gtceu:ev_machine_hull"
+				}
+			]
+			title: "Корпус EV"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"0000000000003041"
+			]
+			description: [
+				"Нанопроцессор собирается в чистой среде. Это ключ к экстремальным машинам и к эфирной ветке измерений. Квантовый процессор следующим шагом не заменяется нанопроцессором в старых рецептах."
+			]
+			icon: "gtceu:nano_processor"
+			id: "0000000000003043"
+			rewards: [
+				{
+					id: "00000000000030CC"
+					table_id: 12444
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030CD"
+					stage: "era_ev"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Класс EV"
+			tasks: [
+				{
+					id: "0000000000003044"
+					type: "item"
+					item: "gtceu:nano_processor"
+				}
+			]
+			title: "Нанопроцессор"
+			x: 0
+			y: 1.6f
+		}
+	]
+	subtitle: "EV"
+	title: "Экстремальное напряжение"
+}

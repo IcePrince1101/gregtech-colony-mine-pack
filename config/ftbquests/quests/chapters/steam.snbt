@@ -1,0 +1,216 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "steam"
+	group: "000000000000309F"
+	icon: "gtceu:lp_steam_furnace"
+	id: "00000000000030F9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000003017"
+			]
+			description: [
+				"Бронза здесь конструкционный металл, не украшение. Корпус задаёт стены паровых машин и котлов. Пока нет корпуса, пар не во что собирать."
+			]
+			icon: "gtceu:bronze_machine_casing"
+			id: "0000000000003019"
+			rewards: [
+				{
+					id: "00000000000030B2"
+					table_id: 12438
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Каркас паровой эпохи"
+			tasks: [
+				{
+					id: "000000000000301A"
+					type: "item"
+					item: "gtceu:bronze_machine_casing"
+				}
+			]
+			title: "Бронзовый корпус"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"0000000000003019"
+			]
+			description: [
+				"Твердотопливный котёл низкого давления сжигает уголь и греет воду. Пар, отдельный энергоноситель со своими трубами, не EU. Высокое давление позже снимет штраф к скорости, но низкое давление уже заменяет ручной крафт пыли и обжига."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "000000000000301B"
+			rewards: [
+				{
+					id: "00000000000030B3"
+					table_id: 12438
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030B4"
+					stage: "era_steam"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Тепло становится паром"
+			tasks: [
+				{
+					id: "000000000000301C"
+					type: "item"
+					item: "gtceu:lp_steam_solid_boiler"
+				}
+			]
+			title: "Паровой котёл"
+			x: 0
+			y: 1.6f
+		}
+		{
+			dependencies: [
+				"000000000000301B"
+			]
+			description: [
+				"Паровая печь низкого давления делает тот же обжиг, что ванильная печь, но кормится паром и работает пакетом. Штраф времени у низкого давления настоящий: машина медленнее электрической наследницы. Это мост, не финал металлургии."
+			]
+			icon: "gtceu:lp_steam_furnace"
+			id: "000000000000301D"
+			rewards: [
+				{
+					id: "00000000000030B5"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Обжиг без ведра угля в руках"
+			tasks: [
+				{
+					id: "000000000000301E"
+					type: "item"
+					item: "gtceu:lp_steam_furnace"
+				}
+			]
+			title: "Паровая печь"
+			x: 0
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"000000000000301B"
+			]
+			description: [
+				"Липкая смола собирается с каучукового дерева. Без неё нет резины, а без резины кабельная изоляция электрической эпохи не собирается. Дерево редкое, саженец стоит беречь."
+			]
+			icon: "gtceu:sticky_resin"
+			id: "000000000000301F"
+			rewards: [
+				{
+					id: "00000000000030B6"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030B7"
+					stage: "era_resin"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Смола раньше кабеля"
+			tasks: [
+				{
+					id: "0000000000003020"
+					type: "item"
+					item: "gtceu:sticky_resin"
+				}
+			]
+			title: "Каучуковое дерево"
+			x: 2.4f
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"000000000000301B"
+			]
+			description: [
+				"Андезитовый сплав запускает кинетику Create: валы, шестерни, скорость вместо напряжения. Это не обход GregTech. Мод Greate потом привяжет те же механизмы к материалам и оборотам GT, но электрические корпуса он не заменяет."
+				""
+				"Ветка необязательна для перехода на LV."
+			]
+			icon: "create:andesite_alloy"
+			id: "0000000000003021"
+			rewards: [
+				{
+					id: "00000000000030B8"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Параллельный цех, не замена EU"
+			tasks: [
+				{
+					id: "0000000000003022"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+			]
+			title: "Мастерская Create"
+			x: -2.6f
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"0000000000003021"
+			]
+			description: [
+				"Колесо даёт вращение, пока есть поток. Рядом с паровой сетью это второй источник движения для Create и, через Greate, для станков, которые понимают обороты. Напряжение EU от колеса само не появится."
+			]
+			icon: "create:water_wheel"
+			id: "0000000000003023"
+			rewards: [
+				{
+					id: "00000000000030B9"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Крутящий момент из реки"
+			tasks: [
+				{
+					id: "0000000000003024"
+					type: "item"
+					item: "create:water_wheel"
+				}
+			]
+			title: "Водяное колесо"
+			x: -2.6f
+			y: 4.8f
+		}
+	]
+	subtitle: "Пар и бронза"
+	title: "Паровая эпоха"
+}

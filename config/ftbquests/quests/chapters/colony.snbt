@@ -1,0 +1,236 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "colony"
+	group: "00000000000030A1"
+	icon: "minecolonies:blockhuttownhall"
+	id: "0000000000003101"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000000300B"
+			]
+			description: [
+				"Сундук снабжения разворачивает лагерь. Колония кормит и строит сама, но материалы берёт из вашего склада. На каменном веке это рот, который надо кормить, а не фабрика схем."
+			]
+			icon: "minecolonies:supplychestdeployer"
+			id: "000000000000306F"
+			rewards: [
+				{
+					id: "00000000000030E5"
+					table_id: 12436
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Старт MineColonies"
+			tasks: [
+				{
+					id: "0000000000003070"
+					type: "item"
+					item: "minecolonies:supplychestdeployer"
+				}
+			]
+			title: "Лагерь снабжения"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"000000000000306F"
+				"0000000000003015"
+			]
+			description: [
+				"Ратуша регистрирует колонию, жителей и постройки. Размер территории и список построек растут от ратуши, не от напряжения сети. Коксовая печь к этому моменту уже кормит уголь и креозот, иначе стройка встанет на топливе."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "0000000000003071"
+			rewards: [
+				{
+					id: "00000000000030E6"
+					table_id: 12437
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Колония существует"
+			tasks: [
+				{
+					id: "0000000000003072"
+					type: "item"
+					item: "minecolonies:blockhuttownhall"
+				}
+			]
+			title: "Ратуша"
+			x: 0
+			y: 1.6f
+		}
+		{
+			dependencies: [
+				"0000000000003071"
+				"000000000000301B"
+			]
+			description: [
+				"Строитель забирает блоки со склада и ставит их по стилю. Без запаса дерева, камня и инструментов очередь построек не двигается. Пар здесь полезен как источник обработанных материалов, не как требование UI колонии."
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "0000000000003073"
+			rewards: [
+				{
+					id: "00000000000030E7"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Они кладут блоки"
+			tasks: [
+				{
+					id: "0000000000003074"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+			]
+			title: "Хижина строителя"
+			x: 0
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"0000000000003073"
+			]
+			description: [
+				"Стража держит рейды. Оружие и броня для них лежат в хижине, не в вашем EU-хранилище. Пока эпоха паровая, ожидайте деревянное и каменное, не квантовые доспехи."
+			]
+			icon: "minecolonies:blockhutguardtower"
+			id: "0000000000003075"
+			rewards: [
+				{
+					id: "00000000000030E8"
+					table_id: 12439
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Рейды ходят к ратуше"
+			tasks: [
+				{
+					id: "0000000000003076"
+					type: "item"
+					item: "minecolonies:blockhutguardtower"
+				}
+			]
+			title: "Башня стражи"
+			x: -2.4f
+			y: 4.8f
+		}
+		{
+			dependencies: [
+				"0000000000003073"
+				"0000000000003029"
+			]
+			description: [
+				"Склад колонии принимает стаки и отдаёт их курьерам. Имеет смысл, когда LV уже производит пачками: иначе курьеры носят булыжник. В ME-сеть он сам не подключается."
+			]
+			icon: "minecolonies:blockhutwarehouse"
+			id: "0000000000003077"
+			rewards: [
+				{
+					id: "00000000000030E9"
+					table_id: 12441
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Буфер между цехом и колонией"
+			tasks: [
+				{
+					id: "0000000000003078"
+					type: "item"
+					item: "minecolonies:blockhutwarehouse"
+				}
+			]
+			title: "Склад"
+			x: 0
+			y: 4.8f
+		}
+		{
+			dependencies: [
+				"0000000000003077"
+				"0000000000003033"
+			]
+			description: [
+				"Университет поднимает уровень работников. Высокий уровень открывает рецепты хижин, не рецепты GregTech. К среднему напряжению колония уже может обслуживать себя, не подменяя химреактор."
+			]
+			icon: "minecolonies:blockhutuniversity"
+			id: "0000000000003079"
+			rewards: [
+				{
+					id: "00000000000030EA"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Жители умнеют медленно"
+			tasks: [
+				{
+					id: "000000000000307A"
+					type: "item"
+					item: "minecolonies:blockhutuniversity"
+				}
+			]
+			title: "Университет"
+			x: 0
+			y: 6.4f
+		}
+		{
+			dependencies: [
+				"0000000000003079"
+				"000000000000303F"
+			]
+			description: [
+				"Алхимик варит зелья для жителей. Это пересечение с магией колонии, не с Blood Magic и не с реактором HV. Ингредиенты он берёт со склада."
+			]
+			icon: "minecolonies:blockhutalchemist"
+			id: "000000000000307B"
+			rewards: [
+				{
+					id: "00000000000030EB"
+					table_id: 12443
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Зелья колонии"
+			tasks: [
+				{
+					id: "000000000000307C"
+					type: "item"
+					item: "minecolonies:blockhutalchemist"
+				}
+			]
+			title: "Хижина алхимика"
+			x: 2.4f
+			y: 6.4f
+		}
+	]
+	subtitle: "MineColonies"
+	title: "Колония"
+}

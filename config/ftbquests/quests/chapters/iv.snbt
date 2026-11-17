@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "iv"
+	group: "000000000000309F"
+	icon: "gtceu:iv_machine_hull"
+	id: "00000000000030FE"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000003043"
+			]
+			description: [
+				"IV, 8192 EU/т. Сеть этого уровня не прощает трансформатор «примерно подходящий». Корпус снова каркас: квантовая электроника и вольфрам вокруг него, а не вместо него."
+			]
+			icon: "gtceu:iv_machine_hull"
+			id: "0000000000003045"
+			rewards: [
+				{
+					id: "00000000000030CE"
+					table_id: 12444
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Безумное напряжение"
+			tasks: [
+				{
+					id: "0000000000003046"
+					type: "item"
+					item: "gtceu:iv_machine_hull"
+				}
+			]
+			title: "Корпус IV"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"0000000000003045"
+			]
+			description: [
+				"Квантовый процессор закрывает безумную электронику. Глаза Края и старшие боссы Катаклизма завязаны на эту отметку: до неё их добыча в данжах срезается. Сам процессор в сундук гачи не попадает."
+			]
+			icon: "gtceu:quantum_processor"
+			id: "0000000000003047"
+			rewards: [
+				{
+					id: "00000000000030CF"
+					table_id: 12445
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030D0"
+					stage: "era_iv"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Класс IV"
+			tasks: [
+				{
+					id: "0000000000003048"
+					type: "item"
+					item: "gtceu:quantum_processor"
+				}
+			]
+			title: "Квантовый процессор"
+			x: 0
+			y: 1.6f
+		}
+	]
+	subtitle: "IV"
+	title: "Безумное напряжение"
+}
