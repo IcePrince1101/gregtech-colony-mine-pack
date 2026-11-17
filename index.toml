@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/createaddition-common.toml"
+hash = "7071869498df339215fcbc4d0b354aa1e3e900e06904c9d394520d52d1ee8354"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
 
@@ -110,7 +114,7 @@ hash = "4a9b25a6c61912e6a56fed4c4395df014cc50d1461c7f96930058b6dcea16b7d"
 
 [[files]]
 file = "config/gtceu.yaml"
-hash = "3090df5b6d03d0c3481fa143853beda87dc35e7a28a4586cb3002032fa6f84f8"
+hash = "4a0d2171f832981ab6ba2a5ab7c92628b9e22202551cfadb7757191c87ac4935"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -119,6 +123,14 @@ hash = "b380eb3a7c524270f81fabd45f8e5e22739a398a43f480cc2de62bdc6f03bf67"
 [[files]]
 file = "config/thermal-common.toml"
 hash = "0b5ade78df8056c8a7dec3eb46aa0d90775bc1214f0745a940abd35e6e312269"
+
+[[files]]
+file = "defaultconfigs/occultism-server.toml"
+hash = "74e13515f43ef18f11a2e3e05923e841962e7f186053403d78b12a2e96035caa"
+
+[[files]]
+file = "kubejs/client_scripts/hide_duplicates.js"
+hash = "9722ef6a8f005345cb917e21ca41b19331a69e7dcc7af18bd41ccb8b92b0cc9d"
 
 [[files]]
 file = "kubejs/data/thermal/forge/biome_modifier/ore_apatite.json"
@@ -153,8 +165,52 @@ file = "kubejs/data/thermal/forge/biome_modifier/ore_tin.json"
 hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 
 [[files]]
+file = "kubejs/server_scripts/eras/ev.js"
+hash = "e12ab9a0277e9eb6293fe2ed4b406487760ce977bf48353167049c220d206eb2"
+
+[[files]]
+file = "kubejs/server_scripts/eras/hv.js"
+hash = "21d2b96c139c0f8f3a1eb286d80f23004fd152743f7387ae8f72d6ad8e427095"
+
+[[files]]
+file = "kubejs/server_scripts/eras/iv.js"
+hash = "e9d45381a849b61e5cb9bbb34eeb77ad3ca1c07216303028f26740055f18246c"
+
+[[files]]
+file = "kubejs/server_scripts/eras/lv.js"
+hash = "b026ed26311b8bfd4192c3bf6fa0d02b6e60c129906d77a7a40c4562d63c5a54"
+
+[[files]]
+file = "kubejs/server_scripts/eras/mv.js"
+hash = "c41e54997dad3ef83b00887156dc71998d264e6ef7fa395d14298ff847ae9ea1"
+
+[[files]]
+file = "kubejs/server_scripts/eras/steam.js"
+hash = "2c56e50d898f00e8192a65fd0396d6285f15206b60682c95fa0e84f686d2cd49"
+
+[[files]]
+file = "kubejs/server_scripts/eras/stone.js"
+hash = "691f6fb156c795176083143c3cd43d987e0b2e36c226e8a36ec292841b992ed0"
+
+[[files]]
 file = "kubejs/server_scripts/gating/dungeons.js"
 hash = "31d56a55a748fef90561c86429bd9ccd93aebd4eb6ce101b3febc237af35d922"
+
+[[files]]
+file = "kubejs/server_scripts/magic/occultism_miner.js"
+hash = "79c0371556f3f59b562d50883a334c9d8ea27e152cd7398374f2325c1403cdc5"
+
+[[files]]
+file = "kubejs/server_scripts/mods/buildcraft.js"
+hash = "901af95264cafd00f1be2a62a6704f8e53d52672d8c0889a1583c26ce99537f2"
+
+[[files]]
+file = "kubejs/server_scripts/mods/createaddition.js"
+hash = "d991f3ee19350049941b316307d6b37954bd15a36cc4cfeb6b6aa59bbc2290f5"
+
+[[files]]
+file = "kubejs/server_scripts/mods/thermal_duplicates.js"
+hash = "2da8af80218f4ed76629a82eac2587ac947afd2e83ad2cb2aac9b2400eca9e24"
 
 [[files]]
 file = "mods/ae2.pw.toml"
@@ -254,6 +310,11 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "e6d1f36e9e0193fe410d136e0cda8a7f6dbbc809c0644f06a601bddf5b38a395"
 metafile = true
 
 [[files]]

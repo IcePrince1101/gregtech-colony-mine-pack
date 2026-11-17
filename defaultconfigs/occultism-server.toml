@@ -1,0 +1,65 @@
+# Откат скорости шахты Occultism: удалить этот файл.
+# Джинн, африт и марид копают вчетверо дольше, чем в моде по умолчанию.
+# Фолиот из призыва убран отдельным скриптом, его время не используется.
+
+#Storage Settings
+[storage]
+	stabilizerTier1Slots = 256
+	stabilizerTier2Slots = 512
+	stabilizerTier3Slots = 1024
+	stabilizerTier4Slots = 2048
+	controllerBaseSlots = 128
+	controllerStackSize = 1024
+	overrideItemStackSizes = true
+	unlinkWormholeOnBreak = false
+
+#Spirit Job Settings
+[spirit_job]
+	drikwingFamiliarSlowFallingSeconds = 15
+	tier1CrusherTimeMultiplier = 2.0
+	tier2CrusherTimeMultiplier = 1.0
+	tier3CrusherTimeMultiplier = 0.5
+	tier4CrusherTimeMultiplier = 0.2
+	tier1CrusherOutputMultiplier = 1.0
+	tier2CrusherOutputMultiplier = 1.5
+	tier3CrusherOutputMultiplier = 2.0
+	tier4CrusherOutputMultiplier = 3.0
+	crusherResultPickupDelay = 60
+	blacksmithFamiliarRepairChance = 0.05
+	blacksmithFamiliarUpgradeCost = 18
+	blacksmithFamiliarUpgradeCooldown = 400
+
+#Ritual Settings
+[rituals]
+	enableClearWeatherRitual = true
+	enableRainWeatherRitual = true
+	enableThunderWeatherRitual = true
+	enableDayTimeRitual = true
+	enableNightTimeRitual = true
+	enableRemainingIngredientCountMatching = false
+	ritualDurationMultiplier = 1.0
+	possibleSpiritNames = []
+	usePossibleSpiritNamesChance = 0.0
+
+#Dimensional Mineshaft Settings
+[dimensional_mineshaft]
+
+	[dimensional_mineshaft.miner_foliot_unspecialized]
+		maxMiningTime = 400
+		rollsPerOperation = 1
+		durability = 1000
+
+	[dimensional_mineshaft.miner_djinni_ores]
+		maxMiningTime = 1200
+		rollsPerOperation = 1
+		durability = 400
+
+	[dimensional_mineshaft.miner_afrit_deeps]
+		maxMiningTime = 800
+		rollsPerOperation = 1
+		durability = 800
+
+	[dimensional_mineshaft.miner_marid_master]
+		maxMiningTime = 400
+		rollsPerOperation = 1
+		durability = 1600
