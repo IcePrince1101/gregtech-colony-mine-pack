@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "achievements"
+	group: "000000000000309F"
+	icon: "minecraft:nether_star"
+	id: "00000000000041F1"
+	order_index: 50
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Держи десять тысяч булыжника в инвентаре. Книга считает предмет, а не статистику «добыто»: у этой версии квестов статистика добычи блока не проверяется."
+				"Награда TBD. Коля выберет уникальный предмет позже."
+			]
+			icon: "minecraft:cobblestone"
+			id: "0000000000004301"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004304"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 10000L
+				}
+			]
+			title: "10 000 булыжника"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Держи тысячу дубовых брёвен. Другие породы в этом черновике не считаются: общий тег брёвен в задачу предмета надёжно не кладётся."
+				"Награда TBD."
+			]
+			icon: "minecraft:oak_log"
+			id: "0000000000004302"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004305"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 1000L
+				}
+			]
+			title: "1 000 брёвен"
+			x: 0.0d
+			y: 1.8d
+		}
+		{
+			description: [
+				"Шестьдесят четыре блока коксового кирпича, из которых складывается кожух печи."
+				"Награда TBD."
+			]
+			icon: "gtceu:coke_oven_bricks"
+			id: "0000000000004303"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004306"
+					type: "item"
+					item: "gtceu:coke_oven_bricks"
+					count: 64L
+				}
+			]
+			title: "64 коксовых кирпича"
+			x: 0.0d
+			y: 3.6d
+		}
+	]
+	subtitle: "Награды только здесь. Пока TBD."
+	title: "Достижения"
+}
