@@ -1,8 +1,120 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/colony.snbt"
+hash = "d51ef058c46aaf42577fde3513adf134071d4a3019edc3494d1612d64e1a7f31"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/dungeons.snbt"
+hash = "3d5c06dda25f7c353c45406dc90a647cf868de69f82aec8d0015d7e80794b8a9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ev.snbt"
+hash = "e19d2415157c2eb3f5d8b309b6d006231031d000e99fdbc27c46b13b1e4e3058"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/hv.snbt"
+hash = "72ac476b340bd96754c75380093be6a266588ccaa67ba2b7bee1eded87765711"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/intro.snbt"
+hash = "aba63dfff24026c4082c60ec91d3da61febdb3bb3a40249ab7c2cf3870569ce0"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/iv.snbt"
+hash = "c7c4978a0dd7d657c26c94065ceec0d7bb84829f8b8d20d723b13a46ff0051de"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/late.snbt"
+hash = "ad2c0ed43c96ee437f3fbebccdfa3c52bb3d3c796701045aee4d7674d96e5b08"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/lv.snbt"
+hash = "aebc7ae1972f4cf6b3ac5f05ce031ff111a9443da90598e71d82e4bfbb7f8e09"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/magic.snbt"
+hash = "9bcf66c6a473aabc3941e4422432fbbb6379774aaf55d1d65578ea2e0dca01b1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/mv.snbt"
+hash = "f6f7044ce6117402b970f94e1a8fe1682333f4208996496f90ad489a7a1520d4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/steam.snbt"
+hash = "fd47682ef17c4af1bc787fb760017b85e306cc677b75520efffacbdc8944e30c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stone.snbt"
+hash = "5ac447a222cf777f5a9e27c512e56f29dda6b63d263a4f636d13973f861af5b4"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "e5aa466983467a0d0378dfac41688ed86d876ebb1f9d75045c30a779398bdb21"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/00_start.snbt"
+hash = "694e805e973cd6d1b9823e85d444fa2c7e71691b273b23efe704ff577e98872d"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/01_hand.snbt"
+hash = "5e3d7bebeb870940d77bee5cede23fb93b5cb09a52cf20196d66fc45365835e3"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/02_coke.snbt"
+hash = "c620c5d8023da2be494140a22857af73211663d7e5352899d12bb5b1ef604476"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/03_pbf.snbt"
+hash = "09253828c5c3592c3e12f9c4ba2e89ea9b455efbb1d851a472d9d85fb84b16fa"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/04_steam.snbt"
+hash = "3b564a3ba5e4f354b2843410682770809f106367b652e91313de8876b855a91f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/05_resin.snbt"
+hash = "4962e5eb78fa4bab157f7835740365ebe1d4d2a267ed815ca904cae340857b60"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/06_lv.snbt"
+hash = "1eb298dd6ccc4eb74c28473a2b02f74c19a38961389072e29f759d887bef3844"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/07_mv.snbt"
+hash = "9eb5ca240bc64dcacaee7130ad25f00ff5bed2bff2f004cd6dc53dd55d5953c7"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/08_hv.snbt"
+hash = "5b98bc1bfbd0af5ca9c53daa92802936b99affccec9f8f65e1d1d1c4d7019ef9"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/09_ev.snbt"
+hash = "4b1748115ced34490f05b79649727fc23bfc350804c717d9040bbee6e25f3dc9"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/10_iv.snbt"
+hash = "51db0baeaa5233c15319450a8572bf39477c64d0fe8b07b34d126ab3a496b175"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/11_late.snbt"
+hash = "557148a56bd3f39230b078b6ed9e7bc9528874fab074afdb8fb5b911d7d90ed6"
+
+[[files]]
+file = "config/gregtech_colony.json"
+hash = "4a9b25a6c61912e6a56fed4c4395df014cc50d1461c7f96930058b6dcea16b7d"
+
+[[files]]
 file = "config/gtceu.yaml"
 hash = "3090df5b6d03d0c3481fa143853beda87dc35e7a28a4586cb3002032fa6f84f8"
+
+[[files]]
+file = "config/jei/jei-client.ini"
+hash = "b380eb3a7c524270f81fabd45f8e5e22739a398a43f480cc2de62bdc6f03bf67"
 
 [[files]]
 file = "config/thermal-common.toml"
@@ -39,6 +151,10 @@ hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 [[files]]
 file = "kubejs/data/thermal/forge/biome_modifier/ore_tin.json"
 hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
+
+[[files]]
+file = "kubejs/server_scripts/gating/dungeons.js"
+hash = "31d56a55a748fef90561c86429bd9ccd93aebd4eb6ce101b3febc237af35d922"
 
 [[files]]
 file = "mods/ae2.pw.toml"

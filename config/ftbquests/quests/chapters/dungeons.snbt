@@ -1,0 +1,363 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "dungeons"
+	group: "00000000000030A2"
+	icon: "minecraft:mossy_cobblestone"
+	id: "0000000000003102"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000000300B"
+			]
+			description: [
+				"Компас ищет ближайшую структуру выбранного типа. В паке одновременно живут шахты и данжи YUNG, таверны, Dungeon Crawl, археология, переосмысленные хижины и крепости. Компас не поднимает лут до вашей эпохи: сундук всё равно фильтруется."
+			]
+			icon: "explorerscompass:explorerscompass"
+			id: "000000000000307D"
+			rewards: [
+				{
+					id: "00000000000030EC"
+					table_id: 12436
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Структуры не спрятаны"
+			tasks: [
+				{
+					id: "000000000000307E"
+					type: "item"
+					item: "explorerscompass:explorerscompass"
+				}
+			]
+			title: "Компас исследователя"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"000000000000307D"
+			]
+			description: [
+				"Улучшенные шахты, склепы, пустынные и тропические храмы, хижины ведьм, это ранний слой. Там дерево, кости, иногда железо. Алмазы, незерит, глаза Края и детали высоких напряжений из этих сундуков вырезаются, пока соответствующая эпоха не отмечена квестом."
+			]
+			icon: "minecraft:mossy_cobblestone"
+			id: "000000000000307F"
+			rewards: [
+				{
+					id: "00000000000030ED"
+					table_id: 12436
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "YUNG и ванильные каркасы"
+			tasks: [
+				{
+					id: "0000000000003080"
+					type: "item"
+					item: "minecraft:mossy_cobblestone"
+				}
+			]
+			title: "Шахты и склепы"
+			x: 0
+			y: 1.6f
+		}
+		{
+			dependencies: [
+				"000000000000307F"
+				"0000000000003015"
+			]
+			description: [
+				"Кисть снимает подозрительный песок и гравий. Находки археологии остаются в раннем и среднем слое. Это не источник схем и не обход коксовой печи, печь к этому моменту уже должна стоять, иначе нечем чинить инструмент."
+			]
+			icon: "minecraft:brush"
+			id: "0000000000003081"
+			rewards: [
+				{
+					id: "00000000000030EE"
+					table_id: 12437
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Better Archeology"
+			tasks: [
+				{
+					id: "0000000000003082"
+					type: "item"
+					item: "minecraft:brush"
+				}
+			]
+			title: "Кисть археолога"
+			x: -2.4f
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"000000000000307F"
+				"0000000000003033"
+			]
+			description: [
+				"Крупные подземелья и таверны держат больше боя и больше сундуков, чем шахта. Лут по-прежнему обрезан по эпохе: сундук не становится MV-складом только потому, что структура большая. Тотем нежити отмечает, что рейды иллагеров вам уже по плечу вместе со средним напряжением."
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "0000000000003083"
+			rewards: [
+				{
+					id: "00000000000030EF"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "When Dungeons Arise, Taverns, Crawl"
+			tasks: [
+				{
+					id: "0000000000003084"
+					type: "item"
+					item: "minecraft:totem_of_undying"
+				}
+			]
+			title: "Таверны и подземелья"
+			x: 0
+			y: 3.2f
+		}
+		{
+			dependencies: [
+				"0000000000003083"
+				"000000000000303F"
+			]
+			description: [
+				"Печёночник растёт в Сумеречном лесу. Портал в измерение пускает только после высокой эпохи: раньше измерение выталкивает обратно. Рыцарский металл, огненный металл и стальной лист из сундуков леса тоже ждут эту отметку."
+			]
+			icon: "twilightforest:liveroot"
+			id: "0000000000003085"
+			rewards: [
+				{
+					id: "00000000000030F0"
+					table_id: 12443
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Сумеречный лес"
+			tasks: [
+				{
+					id: "0000000000003086"
+					type: "item"
+					item: "twilightforest:liveroot"
+				}
+			]
+			title: "Печёночник"
+			x: 0
+			y: 4.8f
+		}
+		{
+			dependencies: [
+				"0000000000003085"
+			]
+			description: [
+				"Измерение Сумеречного леса открывается порталом, но квест засчитает само пребывание там. Боссы леса идут лестницей внутри мода. Гача этого квеста всё ещё из пула HV, без огненных слитков леса."
+			]
+			icon: "twilightforest:magic_map"
+			id: "0000000000003087"
+			rewards: [
+				{
+					id: "00000000000030F1"
+					table_id: 12443
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Измерение леса"
+			tasks: [
+				{
+					id: "0000000000003088"
+					type: "dimension"
+					dimension: "twilightforest:twilight_forest"
+				}
+			]
+			title: "Войти в чащу"
+			x: 0
+			y: 6.4f
+		}
+		{
+			dependencies: [
+				"0000000000003087"
+				"0000000000003043"
+			]
+			description: [
+				"Амброзий, местное топливо и материал Эфира. Портал в небо пускает после экстремальной эпохи. Занитовые и гравититовые вещи из сундуков Эфира до этой отметки снимаются."
+			]
+			icon: "aether:ambrosium_shard"
+			id: "0000000000003089"
+			rewards: [
+				{
+					id: "00000000000030F2"
+					table_id: 12444
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Эфир"
+			tasks: [
+				{
+					id: "000000000000308A"
+					type: "item"
+					item: "aether:ambrosium_shard"
+				}
+			]
+			title: "Осколок амброзия"
+			x: 2.6f
+			y: 6.4f
+		}
+		{
+			dependencies: [
+				"0000000000003089"
+			]
+			description: [
+				"Квест закрывается входом в Эфир. Данжи островов и боссы измерения остаются опаснее леса, но их добыча не заменяет квантовый процессор."
+			]
+			icon: "aether:aether_portal_frame"
+			id: "000000000000308B"
+			rewards: [
+				{
+					id: "00000000000030F3"
+					table_id: 12444
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Измерение Эфира"
+			tasks: [
+				{
+					id: "000000000000308C"
+					type: "dimension"
+					dimension: "aether:the_aether"
+				}
+			]
+			title: "Небесный портал"
+			x: 2.6f
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"000000000000308B"
+				"0000000000003047"
+			]
+			description: [
+				"Глаза Края разбросаны по структурам и открывают портал только набором. До безумной эпохи сундуки эти глаза не оставляют. Квест отмечает, что глаз у вас уже законный, а не выбитый раньше времени."
+			]
+			icon: "endrem:witch_eye"
+			id: "000000000000308D"
+			rewards: [
+				{
+					id: "00000000000030F4"
+					table_id: 12445
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "End Remastered"
+			tasks: [
+				{
+					id: "000000000000308E"
+					type: "item"
+					item: "endrem:witch_eye"
+				}
+			]
+			title: "Глаз ведьмы"
+			x: 0
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"000000000000308D"
+			]
+			description: [
+				"Рог падает со старших боссов Катаклизма. Пока нет отметки IV, удар по Игнису, Левиафану, Предвестнику, Сцилле, Древнему останку, Маледиктусу, Адскому чудовищу и Стражу Края не проходит."
+				""
+				"Рог не кладётся в гачу. Его нельзя выбить сундуком квеста раньше боя."
+			]
+			icon: "cataclysm:monstrous_horn"
+			id: "000000000000308F"
+			rewards: [
+				{
+					id: "00000000000030F5"
+					table_id: 12445
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Катаклизм"
+			tasks: [
+				{
+					id: "0000000000003090"
+					type: "item"
+					item: "cataclysm:monstrous_horn"
+				}
+			]
+			title: "Чудовищный рог"
+			x: 0
+			y: 9.6f
+		}
+		{
+			dependencies: [
+				"000000000000308F"
+				"0000000000003049"
+			]
+			description: [
+				"Игнитий, слиток с вершины Катаклизма. Он живёт в своей броне и оружии и не заменяет корпус LuV. Квест стоит после поздней отметки, когда измеренческий гейт уже снят."
+			]
+			icon: "cataclysm:ignitium_ingot"
+			id: "0000000000003091"
+			rewards: [
+				{
+					id: "00000000000030F6"
+					table_id: 12446
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Материал после босса"
+			tasks: [
+				{
+					id: "0000000000003092"
+					type: "item"
+					item: "cataclysm:ignitium_ingot"
+				}
+			]
+			title: "Игнитий"
+			x: 0
+			y: 11.2f
+		}
+	]
+	subtitle: "Структуры по эпохам"
+	title: "Данжи"
+}

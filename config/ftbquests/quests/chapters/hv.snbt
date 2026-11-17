@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "hv"
+	group: "000000000000309F"
+	icon: "gtceu:hv_machine_hull"
+	id: "00000000000030FC"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000003035"
+			]
+			description: [
+				"HV, 512 EU/т. Трансформаторы и кабель другого сечения здесь уже не косметика: ошибка в линии уничтожает машины ниже по сети. Корпус собирается на материалах, которые MV только начал выпускать пакетами."
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "000000000000303D"
+			rewards: [
+				{
+					id: "00000000000030C8"
+					table_id: 12442
+					team_reward: false
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Высокое напряжение"
+			tasks: [
+				{
+					id: "000000000000303E"
+					type: "item"
+					item: "gtceu:hv_machine_hull"
+				}
+			]
+			title: "Корпус HV"
+			x: 0
+			y: 0
+		}
+		{
+			dependencies: [
+				"000000000000303D"
+			]
+			description: [
+				"Интегральная схема этого класса сидит в чистой химии и более точных компонентах, не в стопке хороших плат. С этого порога данжи Сумеречного леса и алтари Forbidden and Arcanus перестают быть чужой эпохой."
+			]
+			icon: "gtceu:advanced_integrated_circuit"
+			id: "000000000000303F"
+			rewards: [
+				{
+					id: "00000000000030C9"
+					table_id: 12443
+					team_reward: false
+					type: "random"
+				}
+				{
+					auto: "invisible"
+					id: "00000000000030CA"
+					stage: "era_hv"
+					team_reward: false
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Класс HV"
+			tasks: [
+				{
+					id: "0000000000003040"
+					type: "item"
+					item: "gtceu:advanced_integrated_circuit"
+				}
+			]
+			title: "Продвинутая интегральная схема"
+			x: 0
+			y: 1.6f
+		}
+	]
+	subtitle: "HV"
+	title: "Высокое напряжение"
+}

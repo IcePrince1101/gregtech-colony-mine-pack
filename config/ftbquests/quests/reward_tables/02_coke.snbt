@@ -1,0 +1,107 @@
+{
+	id: "0000000000003095"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			count: 6
+			item: "minecraft:bread"
+			weight: 24.0f
+		}
+		{
+			count: 4
+			item: "minecraft:apple"
+			weight: 18.0f
+		}
+		{
+			count: 4
+			item: "minecraft:cooked_beef"
+			weight: 16.0f
+		}
+		{
+			count: 4
+			item: "farmersdelight:cabbage"
+			weight: 14.0f
+		}
+		{
+			count: 16
+			item: "minecraft:torch"
+			weight: 16.0f
+		}
+		{
+			count: 2
+			item: "minecraft:oak_sapling"
+			weight: 8.0f
+		}
+		{
+			count: 3
+			item: "minecraft:leather"
+			weight: 8.0f
+		}
+		{
+			count: 6
+			item: "minecraft:string"
+			weight: 8.0f
+		}
+		{
+			count: 4
+			item: "minecraft:bowl"
+			weight: 6.0f
+		}
+		{
+			count: 4
+			item: "minecraft:wheat_seeds"
+			weight: 8.0f
+		}
+		{
+			item: "minecraft:name_tag"
+			weight: 2.0f
+		}
+		{
+			count: 4
+			item: "minecraft:dandelion"
+			weight: 3.0f
+		}
+		{
+			count: 8
+			item: "minecraft:flint"
+			weight: 14.0f
+		}
+		{
+			count: 8
+			item: "minecraft:coal"
+			weight: 12.0f
+		}
+		{
+			count: 8
+			item: "minecraft:brick"
+			weight: 10.0f
+		}
+		{
+			count: 6
+			item: "minecraft:glass"
+			weight: 8.0f
+		}
+		{
+			count: 8
+			item: "minecraft:clay_ball"
+			weight: 8.0f
+		}
+		{
+			count: 12
+			item: "minecraft:charcoal"
+			weight: 14.0f
+		}
+		{
+			count: 8
+			item: "gtceu:wood_dust"
+			weight: 10.0f
+		}
+		{
+			count: 2
+			item: "minecraft:iron_ingot"
+			weight: 6.0f
+		}
+	]
+	title: "coke"
+}
