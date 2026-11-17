@@ -182,7 +182,7 @@ hash = "b026ed26311b8bfd4192c3bf6fa0d02b6e60c129906d77a7a40c4562d63c5a54"
 
 [[files]]
 file = "kubejs/server_scripts/eras/mv.js"
-hash = "c41e54997dad3ef83b00887156dc71998d264e6ef7fa395d14298ff847ae9ea1"
+hash = "3d4a1e48b5e0eb84be9c57b6194035c350aa990431045362b4397099d9d2eec1"
 
 [[files]]
 file = "kubejs/server_scripts/eras/steam.js"
@@ -190,7 +190,7 @@ hash = "2c56e50d898f00e8192a65fd0396d6285f15206b60682c95fa0e84f686d2cd49"
 
 [[files]]
 file = "kubejs/server_scripts/eras/stone.js"
-hash = "691f6fb156c795176083143c3cd43d987e0b2e36c226e8a36ec292841b992ed0"
+hash = "504250ea638ee4e12e3e010c3892743218020e91ca23a1dbd113e834e3dec22a"
 
 [[files]]
 file = "kubejs/server_scripts/gating/dungeons.js"

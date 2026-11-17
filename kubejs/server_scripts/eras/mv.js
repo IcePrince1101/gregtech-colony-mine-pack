@@ -2,6 +2,11 @@
 // Ключ эпохи: вакуумный морозильник требует водную эссенцию и помпы Create.
 
 ServerEvents.recipes(function (event) {
+  // Greate снимает create:crafting/kinetics/mechanical_pump и не кладёт взамен
+  // крафт ванильной помпы. Морозильник ниже требует именно create:mechanical_pump.
+  event.shapeless('create:mechanical_pump', ['create:cogwheel', 'create:fluid_pipe'])
+    .id('gregtech_colony:mechanical_pump')
+
   event.remove({ output: 'gtceu:vacuum_freezer' })
   event.shaped('gtceu:vacuum_freezer', ['PHP', 'FCF', 'PHP'], {
     P: 'create:mechanical_pump',
