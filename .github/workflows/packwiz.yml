@@ -23,9 +23,9 @@ jobs:
           git diff --exit-code
 
       - name: Export Modrinth pack
-        run: packwiz modrinth export -o gregtech-colony-0.3.0.mrpack
+        run: packwiz modrinth export -o gregtech-colony-0.3.1.mrpack
 
       - uses: actions/upload-artifact@v4
         with:
           name: gregtech-colony-mrpack
-          path: gregtech-colony-0.3.0.mrpack
+          path: gregtech-colony-0.3.1.mrpack

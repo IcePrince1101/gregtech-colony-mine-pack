@@ -1,15 +1,16 @@
 // Откат каменного века: удалить этот файл.
 // Ключ эпохи: контроллер коксовой печи берёт два живых камня Botania.
-// В сетке 3x3 не помещаются ещё два предмета сверх 4 кирпичей, 4 пластин и ключа,
-// поэтому две пластины заменены живым камнем.
-// Пластины железа в реестре нет: ранние пластины GTCEu — кованое железо.
+// В сетке 3x3 не помещаются ещё два предмета сверх 4 кирпичей, 4 слитков и ключа,
+// поэтому два слитка заменены живым камнем.
+// Пластины gtceu:iron_plate в реестре нет, а кованое железо плавится только в дуговой печи.
+// В каменном веке доступен слиток из обычной печи.
 
 ServerEvents.recipes(function (event) {
   event.remove({ output: 'gtceu:coke_oven' })
   event.shaped('gtceu:coke_oven', ['BLB', 'PWP', 'BLB'], {
     B: 'gtceu:coke_oven_bricks',
     L: 'botania:livingrock',
-    P: 'gtceu:wrought_iron_plate',
+    P: 'minecraft:iron_ingot',
     W: '#forge:tools/wrenches'
   }).damageIngredient('#forge:tools/wrenches').id('gregtech_colony:coke_oven')
 
