@@ -186,7 +186,7 @@ hash = "4aaa2b78c694f37ce29a38571c45dce5e028bcf50881d5f1842facbddb083ea7"
 
 [[files]]
 file = "kubejs/server_scripts/eras/mv.js"
-hash = "cc9ea47a3d8afb6cd7423ff96014819d476226ba10f407f1c4b76dcff1cc5be9"
+hash = "f4583283941abfd3de4abfd2c2d3e3a4aabc6d5b9b733005693f40b19a54df47"
 
 [[files]]
 file = "kubejs/server_scripts/eras/steam.js"

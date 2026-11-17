@@ -65,7 +65,7 @@ jobs:
           done
           cd /tmp/audit-server
           curl -fsSL -o packwiz-installer.jar https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar
-          curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer-bootstrap.jar
+          curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/download/v0.0.3/packwiz-installer-bootstrap.jar
           java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s server http://127.0.0.1:8080/pack.toml
           python3 - << 'PY'
           import json
