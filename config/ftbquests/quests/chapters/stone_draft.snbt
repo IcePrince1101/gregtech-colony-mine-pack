@@ -1,0 +1,944 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "stone_draft"
+	group: "000000000000309F"
+	icon: "gtceu:coke_oven"
+	id: "00000000000041F0"
+	order_index: -1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Квадрат обязателен. Круг можно пропустить: он полезен, но эпоху не держит."
+				"Три ветки сходятся к ключу эпохи в центре. Сейчас это коксовая печь."
+				"Награды обычных квестов нет. Их смотри в главе «Достижения». Это черновик, не финал."
+			]
+			icon: "ftbquests:book"
+			id: "0000000000004201"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Черновик главы"
+			tasks: [
+				{
+					id: "0000000000004225"
+					type: "checkmark"
+				}
+			]
+			title: "Как читать эту книгу"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004201"
+			]
+			description: [
+				"Копай гравий, пока не выпадет кремень. Из него верстак этой эпохи."
+				"Из бревна руками выходит мало досок. Так и задумано."
+			]
+			icon: "minecraft:flint"
+			id: "0000000000004202"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Из гравия"
+			tasks: [
+				{
+					id: "0000000000004226"
+					type: "item"
+					item: "minecraft:flint"
+				}
+			]
+			title: "Кремень"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004202"
+			]
+			description: [
+				"Верстак собирается из двух кремней и двух брёвен. Досок на него не хватает нарочно."
+				"Create в этой эпохе нет."
+			]
+			icon: "minecraft:crafting_table"
+			id: "0000000000004203"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Два кремня и два бревна"
+			tasks: [
+				{
+					id: "0000000000004227"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+			]
+			title: "Верстак"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Печь плавит руду и обжигает заготовки. Бревно в ней не становится углём: уголь даст коксовая печь."
+			]
+			icon: "minecraft:furnace"
+			id: "0000000000004204"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Первый обжиг"
+			tasks: [
+				{
+					id: "0000000000004228"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
+			title: "Печь"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Руда лежит жилами GregTech. На поверхности её выдаёт индикатор, не ванильная россыпь."
+				"Хватит любой одной из трёх: медь, олово или железо. Дальше понадобятся все три слитка."
+			]
+			icon: "minecraft:raw_copper"
+			id: "0000000000004205"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Ванильных россыпей нет"
+			tasks: [
+				{
+					id: "0000000000004229"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+			]
+			title: "Жила: медь"
+			x: -1.6d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Руда лежит жилами GregTech. На поверхности её выдаёт индикатор, не ванильная россыпь."
+				"Хватит любой одной из трёх: медь, олово или железо. Дальше понадобятся все три слитка."
+			]
+			icon: "gtceu:raw_tin"
+			id: "0000000000004206"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Ванильных россыпей нет"
+			tasks: [
+				{
+					id: "000000000000422A"
+					type: "item"
+					item: "gtceu:raw_tin"
+				}
+			]
+			title: "Жила: олово"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Руда лежит жилами GregTech. На поверхности её выдаёт индикатор, не ванильная россыпь."
+				"Хватит любой одной из трёх: медь, олово или железо. Дальше понадобятся все три слитка."
+			]
+			icon: "minecraft:raw_iron"
+			id: "0000000000004207"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Ванильных россыпей нет"
+			tasks: [
+				{
+					id: "000000000000422B"
+					type: "item"
+					item: "minecraft:raw_iron"
+				}
+			]
+			title: "Жила: железо"
+			x: 1.6d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004205"
+				"0000000000004206"
+				"0000000000004207"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Переплавь сырьё в печи. Нужны все три слитка: медь, олово и железо."
+			]
+			icon: "minecraft:iron_ingot"
+			id: "0000000000004208"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Медь, олово, железо"
+			tasks: [
+				{
+					id: "000000000000422C"
+					type: "item"
+					item: "minecraft:copper_ingot"
+				}
+				{
+					id: "000000000000422D"
+					type: "item"
+					item: "gtceu:tin_ingot"
+				}
+				{
+					id: "000000000000422E"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+			]
+			title: "Слитки"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004208"
+			]
+			description: [
+				"Железный молот плющит слитки в пластины. Для зачёта хватит молота и оловянной пластины."
+				"Железной пластины gtceu в реестре нет: железо в пластину так не куётся."
+			]
+			icon: "gtceu:iron_hammer"
+			id: "0000000000004209"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Пластины куют"
+			tasks: [
+				{
+					id: "000000000000422F"
+					type: "item"
+					item: "gtceu:iron_hammer"
+				}
+				{
+					id: "0000000000004230"
+					type: "item"
+					item: "gtceu:tin_plate"
+				}
+			]
+			title: "Молот и пластина"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004209"
+			]
+			description: [
+				"Деревянная форма многоразовая. Глина и песок уходят в заготовку, печь её обжигает."
+				"Этот кирпич, не ванильный, складывается в кожух печи."
+			]
+			icon: "gtceu:coke_oven_brick"
+			id: "000000000000420A"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Форма и глина"
+			tasks: [
+				{
+					id: "0000000000004231"
+					type: "item"
+					item: "gtceu:coke_oven_brick"
+				}
+			]
+			title: "Коксовый кирпич"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Алтарь из булыжника и лепестков. В нём собирается чистая маргаритка."
+			]
+			icon: "botania:apothecary_default"
+			id: "000000000000420C"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Botania"
+			tasks: [
+				{
+					id: "0000000000004232"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+			]
+			title: "Лепестковый алтарь"
+			x: -4.8d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Маргаритка превращает камень в живой камень. Без неё контроллер печи не собрать."
+			]
+			icon: "botania:pure_daisy"
+			id: "000000000000420D"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Botania"
+			tasks: [
+				{
+					id: "0000000000004233"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+			]
+			title: "Чистая маргаритка"
+			x: -4.8d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"000000000000420D"
+			]
+			description: [
+				"Нужны два блока. Они входят в контроллер коксовой печи вместе с кирпичом и железом."
+			]
+			icon: "botania:livingrock"
+			id: "000000000000420E"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Два блока в печь"
+			tasks: [
+				{
+					id: "0000000000004234"
+					type: "item"
+					item: "botania:livingrock"
+					count: 2L
+				}
+			]
+			title: "Живой камень"
+			x: -4.8d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Поставь лагерь на ровную твёрдую землю. Это старт колонии, не корабль."
+			]
+			icon: "minecolonies:supplycampdeployer"
+			id: "000000000000420F"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "MineColonies"
+			tasks: [
+				{
+					id: "0000000000004235"
+					type: "item"
+					item: "minecolonies:supplycampdeployer"
+				}
+			]
+			title: "Лагерь снабжения"
+			x: 4.8d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"000000000000420F"
+			]
+			description: [
+				"Ратуша регистрирует колонию. Жители и постройки считаются от неё."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "0000000000004210"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Колония существует"
+			tasks: [
+				{
+					id: "0000000000004236"
+					type: "item"
+					item: "minecolonies:blockhuttownhall"
+				}
+			]
+			title: "Ратуша"
+			x: 4.8d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004210"
+			]
+			description: [
+				"Поставь хижину строителя и подними её до 1 уровня в интерфейсе колонии."
+				"Квест закрывается предметом хижины. Отдельной проверки уровня у книги нет."
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "0000000000004211"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Хижина 1 уровня"
+			tasks: [
+				{
+					id: "0000000000004237"
+					type: "item"
+					item: "minecolonies:blockhutbuilder"
+				}
+			]
+			title: "Строитель"
+			x: 4.8d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000420A"
+				"000000000000420E"
+				"0000000000004211"
+			]
+			description: [
+				"Контроллер: четыре коксовых кирпича, два железных слитка из печи, два живых камня и гаечный ключ."
+				"Кожух вокруг него из 26 коксовых кирпичей. Первая загрузка брёвен даёт кокс."
+				"Сюда сходятся GregTech, Botania и колония. Пока печи нет, эпоха не закрыта."
+			]
+			icon: "gtceu:coke_oven"
+			id: "000000000000420B"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ключ эпохи"
+			tasks: [
+				{
+					id: "0000000000004238"
+					type: "item"
+					item: "gtceu:coke_oven"
+				}
+				{
+					id: "0000000000004239"
+					type: "item"
+					item: "gtceu:coke_gem"
+				}
+			]
+			title: "Коксовая печь"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "minecraft:wooden_pickaxe"
+			id: "0000000000004212"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Не обязательна"
+			tasks: [
+				{
+					id: "000000000000423A"
+					type: "item"
+					item: "minecraft:wooden_pickaxe"
+				}
+			]
+			title: "Деревянная кирка"
+			x: -7.4d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004212"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "minecraft:stone_pickaxe"
+			id: "0000000000004213"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Не обязательна"
+			tasks: [
+				{
+					id: "000000000000423B"
+					type: "item"
+					item: "minecraft:stone_pickaxe"
+				}
+			]
+			title: "Каменная кирка"
+			x: -7.4d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "gtceu:flint_pickaxe"
+			id: "0000000000004214"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Инструмент GT"
+			tasks: [
+				{
+					id: "000000000000423C"
+					type: "item"
+					item: "gtceu:flint_pickaxe"
+				}
+			]
+			title: "Кремнёвая кирка"
+			x: -7.4d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004202"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "gtceu:flint_mortar"
+			id: "0000000000004215"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Пыль без машины"
+			tasks: [
+				{
+					id: "000000000000423D"
+					type: "item"
+					item: "gtceu:flint_mortar"
+				}
+			]
+			title: "Ступка"
+			x: -7.4d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004208"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "gtceu:iron_file"
+			id: "0000000000004216"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "После слитков"
+			tasks: [
+				{
+					id: "000000000000423E"
+					type: "item"
+					item: "gtceu:iron_file"
+				}
+			]
+			title: "Напильник"
+			x: -7.4d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004208"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "gtceu:iron_wrench"
+			id: "0000000000004217"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Им крутят машины"
+			tasks: [
+				{
+					id: "000000000000423F"
+					type: "item"
+					item: "gtceu:iron_wrench"
+				}
+			]
+			title: "Гаечный ключ"
+			x: -7.4d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Побочный квест. Эпоху не закрывает."
+				"Предмет можно сделать и пользоваться, но без него коксовая печь всё равно собирается."
+			]
+			icon: "sophisticatedstorage:chest"
+			id: "0000000000004218"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sophisticated Storage"
+			tasks: [
+				{
+					id: "0000000000004240"
+					type: "item"
+					item: "sophisticatedstorage:chest"
+				}
+			]
+			title: "Сундук склада"
+			x: -7.4d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Побочный квест. Ветку Botania и печь не блокирует."
+			]
+			icon: "occultism:dictionary_of_spirits"
+			id: "0000000000004219"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Occultism"
+			tasks: [
+				{
+					id: "0000000000004241"
+					type: "item"
+					item: "occultism:dictionary_of_spirits"
+				}
+			]
+			title: "Словарь духов"
+			x: -9.8d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Побочный квест. Ветку Botania и печь не блокирует."
+			]
+			icon: "malum:raw_soulstone"
+			id: "000000000000421B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Malum"
+			tasks: [
+				{
+					id: "0000000000004242"
+					type: "item"
+					item: "malum:raw_soulstone"
+				}
+			]
+			title: "Сырой камень душ"
+			x: -9.8d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Побочный квест. Ветку Botania и печь не блокирует."
+			]
+			icon: "ars_nouveau:worn_notebook"
+			id: "000000000000421C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ars Nouveau"
+			tasks: [
+				{
+					id: "0000000000004243"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+				}
+			]
+			title: "Потрёпанный блокнот"
+			x: -9.8d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004215"
+			]
+			description: [
+				"Побочный квест магии. К ключу эпохи не обязателен."
+				"Мел Occultism в этой сборке растирается ступкой GregTech, если квест про мел."
+			]
+			icon: "occultism:chalk_white"
+			id: "000000000000421A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Нужна ступка GT"
+			tasks: [
+				{
+					id: "0000000000004244"
+					type: "item"
+					item: "occultism:chalk_white"
+				}
+			]
+			title: "Белый мел"
+			x: -9.8d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000000420F"
+			]
+			description: [
+				"Собери глину и песок. Курьер отнесёт их на склад, когда хижина курьера появится. Сам квест смотрит предметы у тебя."
+			]
+			icon: "minecraft:clay_ball"
+			id: "0000000000004220"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Для колонии"
+			tasks: [
+				{
+					id: "0000000000004245"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+				{
+					id: "0000000000004246"
+					type: "item"
+					item: "minecraft:sand"
+				}
+			]
+			title: "Глина и песок"
+			x: 7.4d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004210"
+			]
+			description: [
+				"Поставь жилой дом, чтобы колония наняла людей. Счётчик «10 жителей» книга проверить не умеет."
+			]
+			icon: "minecolonies:blockhutcitizen"
+			id: "000000000000421D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Дом"
+			tasks: [
+				{
+					id: "0000000000004247"
+					type: "item"
+					item: "minecolonies:blockhutcitizen"
+				}
+			]
+			title: "Первые жители"
+			x: 7.4d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004211"
+			]
+			description: [
+				"Лесоруб рубит лес сам. Для печи не нужен."
+			]
+			icon: "minecolonies:blockhutlumberjack"
+			id: "000000000000421E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Хижина"
+			tasks: [
+				{
+					id: "0000000000004248"
+					type: "item"
+					item: "minecolonies:blockhutlumberjack"
+				}
+			]
+			title: "Лесоруб"
+			x: 7.4d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004211"
+			]
+			description: [
+				"Шахта колонии копает камень и руду. Жилы GregTech она не заменяет."
+			]
+			icon: "minecolonies:blockhutminer"
+			id: "000000000000421F"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Копает колония"
+			tasks: [
+				{
+					id: "0000000000004249"
+					type: "item"
+					item: "minecolonies:blockhutminer"
+				}
+			]
+			title: "Шахтёр"
+			x: 7.4d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Засчитается любая улучшенная шахта YUNG: дуб, ель, пустыня и остальные варианты одного тега."
+			]
+			icon: "minecraft:rail"
+			id: "0000000000004221"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Зайди внутрь"
+			tasks: [
+				{
+					id: "000000000000424A"
+					type: "structure"
+					structure: "#bettermineshafts:better_mineshafts"
+				}
+			]
+			title: "Шахта YUNG"
+			x: 9.8d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Склеп нежити из Dungeons and Taverns. Другие данжи этот квест не закрывают."
+			]
+			icon: "minecraft:bone"
+			id: "0000000000004222"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Dungeons and Taverns"
+			tasks: [
+				{
+					id: "000000000000424B"
+					type: "structure"
+					structure: "nova_structures:undead_crypt"
+				}
+			]
+			title: "Склеп"
+			x: 9.8d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004203"
+			]
+			description: [
+				"Кисть снимает подозрительный песок и гравий. К печи не обязательна."
+			]
+			icon: "minecraft:brush"
+			id: "0000000000004223"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Better Archeology"
+			tasks: [
+				{
+					id: "000000000000424C"
+					type: "item"
+					item: "minecraft:brush"
+				}
+			]
+			title: "Кисть археолога"
+			x: 9.8d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Черновик проверяет стоянку Explorify. У мода нет одного тега на все постройки, поэтому руины и башни этим квестом не закрываются."
+			]
+			icon: "minecraft:campfire"
+			id: "0000000000004224"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Одна структура из многих"
+			tasks: [
+				{
+					id: "000000000000424D"
+					type: "structure"
+					structure: "explorify:campsite"
+				}
+			]
+			title: "Стоянка Explorify"
+			x: 9.8d
+			y: 10.5d
+		}
+	]
+	subtitle: "Черновик: три ветки к печи"
+	title: "1. Каменный век"
+}

@@ -9,6 +9,10 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/achievements.snbt"
+hash = "ba7f71ac05e37cbe7cd81633a1957909e4218e85fc62766a49671ff1501ae580"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/colony.snbt"
 hash = "d51ef058c46aaf42577fde3513adf134071d4a3019edc3494d1612d64e1a7f31"
 
@@ -55,6 +59,10 @@ hash = "fd47682ef17c4af1bc787fb760017b85e306cc677b75520efffacbdc8944e30c"
 [[files]]
 file = "config/ftbquests/quests/chapters/stone.snbt"
 hash = "7afc392283e738984d9c28aa46f20b20380c9b07f6622c4d992cbd32703d3b43"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/stone_draft.snbt"
+hash = "98ed93fb195b8a4699ee8ee24e28174fd1540c1436fa20544324d015ec1f949c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
