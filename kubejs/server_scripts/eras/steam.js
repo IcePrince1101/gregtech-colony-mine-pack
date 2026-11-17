@@ -18,6 +18,9 @@ ServerEvents.recipes(function (event) {
   event.remove({ output: 'create:cogwheel' })
   event.shapeless('create:cogwheel', ['create:shaft', '#minecraft:planks', 'gtceu:small_bronze_gear'])
     .id('gregtech_colony:cogwheel')
+  // Greate снимает ванильные рецепты большой шестерни и не отдаёт create:large_cogwheel.
+  event.shapeless('create:large_cogwheel', ['create:cogwheel', '#minecraft:planks'])
+    .id('gregtech_colony:large_cogwheel')
 
   event.remove({ output: 'gtceu:resin_circuit_board' })
   event.custom({

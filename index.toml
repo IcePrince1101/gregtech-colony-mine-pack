@@ -165,6 +165,10 @@ file = "kubejs/data/thermal/forge/biome_modifier/ore_tin.json"
 hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 
 [[files]]
+file = "kubejs/server_scripts/audit/recipe_audit.js"
+hash = "b51f71183b93fd04924bc4b42c3549d648170e4c4ba1908cce2a54970584690d"
+
+[[files]]
 file = "kubejs/server_scripts/eras/ev.js"
 hash = "e12ab9a0277e9eb6293fe2ed4b406487760ce977bf48353167049c220d206eb2"
 
@@ -178,15 +182,15 @@ hash = "e9d45381a849b61e5cb9bbb34eeb77ad3ca1c07216303028f26740055f18246c"
 
 [[files]]
 file = "kubejs/server_scripts/eras/lv.js"
-hash = "b026ed26311b8bfd4192c3bf6fa0d02b6e60c129906d77a7a40c4562d63c5a54"
+hash = "4aaa2b78c694f37ce29a38571c45dce5e028bcf50881d5f1842facbddb083ea7"
 
 [[files]]
 file = "kubejs/server_scripts/eras/mv.js"
-hash = "3d4a1e48b5e0eb84be9c57b6194035c350aa990431045362b4397099d9d2eec1"
+hash = "cc9ea47a3d8afb6cd7423ff96014819d476226ba10f407f1c4b76dcff1cc5be9"
 
 [[files]]
 file = "kubejs/server_scripts/eras/steam.js"
-hash = "2c56e50d898f00e8192a65fd0396d6285f15206b60682c95fa0e84f686d2cd49"
+hash = "42aa0254e66f927b1227b15e5d8e783a6fe2b0ebdf47e7feaf77fe935a1ddce9"
 
 [[files]]
 file = "kubejs/server_scripts/eras/stone.js"
@@ -201,6 +205,10 @@ file = "kubejs/server_scripts/magic/occultism_miner.js"
 hash = "79c0371556f3f59b562d50883a334c9d8ea27e152cd7398374f2325c1403cdc5"
 
 [[files]]
+file = "kubejs/server_scripts/mods/ae2.js"
+hash = "4314f922258227f7a42696ce7f805635f584a3a9f4bedfa5e16be587b9310089"
+
+[[files]]
 file = "kubejs/server_scripts/mods/buildcraft.js"
 hash = "901af95264cafd00f1be2a62a6704f8e53d52672d8c0889a1583c26ce99537f2"
 
@@ -209,8 +217,12 @@ file = "kubejs/server_scripts/mods/createaddition.js"
 hash = "d991f3ee19350049941b316307d6b37954bd15a36cc4cfeb6b6aa59bbc2290f5"
 
 [[files]]
+file = "kubejs/server_scripts/mods/occultism_crushing.js"
+hash = "a32c6edce06fed05214fee659024315011799f525a3cef4e61bff8ef05d0b97c"
+
+[[files]]
 file = "kubejs/server_scripts/mods/thermal_duplicates.js"
-hash = "2da8af80218f4ed76629a82eac2587ac947afd2e83ad2cb2aac9b2400eca9e24"
+hash = "0841147abb091d89e7b06a9c27dc8771cbdeaf67e9300ed7b0250826584bd4f1"
 
 [[files]]
 file = "mods/ae2.pw.toml"

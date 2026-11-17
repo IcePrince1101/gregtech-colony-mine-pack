@@ -27,7 +27,8 @@ ServerEvents.recipes(function (event) {
     event.shaped(output, pattern, key).id('gregtech_colony:' + output.replace(':', '_'))
   }
 
-  let wire = '#forge:wires/tin'
+  // forge:wires/tin в GTCEu пустой. Одиночный провод — предмет gtceu:tin_single_wire.
+  let wire = 'gtceu:tin_single_wire'
   let hull = 'gtceu:lv_machine_hull'
   let ironGear = '#forge:gears/iron'
   let goldGear = '#forge:gears/gold'

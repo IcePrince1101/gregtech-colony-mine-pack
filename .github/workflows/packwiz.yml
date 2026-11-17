@@ -23,9 +23,72 @@ jobs:
           git diff --exit-code
 
       - name: Export Modrinth pack
-        run: packwiz modrinth export -o gregtech-colony-0.3.1.mrpack
+        run: packwiz modrinth export -o gregtech-colony-0.3.2.mrpack
 
       - uses: actions/upload-artifact@v4
         with:
           name: gregtech-colony-mrpack
-          path: gregtech-colony-0.3.1.mrpack
+          path: gregtech-colony-0.3.2.mrpack
+
+  recipe-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@v0.0.0-20261014010756-170b22d78595
+
+      - name: Boot a headless server and audit recipes
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/audit-server
+          cd /tmp/audit-server
+          curl -fsSL -o forge-installer.jar https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.4.29/forge-1.20.1-47.4.29-installer.jar
+          java -jar forge-installer.jar --installServer
+          printf 'eula=true\n' > eula.txt
+          printf -- '-Xms2G\n-Xmx4G\n' > user_jvm_args.txt
+          cd "$GITHUB_WORKSPACE"
+          packwiz serve --port 8080 > /tmp/packwiz-serve.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS -o /dev/null http://127.0.0.1:8080/pack.toml && break
+            sleep 1
+          done
+          cd /tmp/audit-server
+          curl -fsSL -o packwiz-installer.jar https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar
+          curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer-bootstrap.jar
+          java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -g -s server http://127.0.0.1:8080/pack.toml
+          python3 - << 'PY'
+          import json
+          path = "config/gregtech_colony.json"
+          data = json.load(open(path))
+          data["recipe_audit_stop"] = True
+          json.dump(data, open(path, "w"))
+          PY
+          ./run.sh nogui > /tmp/audit.log 2>&1 &
+          pid=$!
+          for i in $(seq 1 100); do
+            if grep -q GTC_AUDIT_DONE /tmp/audit.log; then break; fi
+            if ! kill -0 "$pid" 2>/dev/null; then break; fi
+            sleep 6
+          done
+          kill "$pid" 2>/dev/null || true
+          echo "----- audit lines -----"
+          grep GTC_AUDIT_ /tmp/audit.log || true
+          grep -q GTC_AUDIT_OK /tmp/audit.log
+          if grep -q GTC_AUDIT_FAIL /tmp/audit.log; then exit 1; fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recipe-audit-log
+          path: /tmp/audit.log
