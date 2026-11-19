@@ -23,12 +23,12 @@ jobs:
           git diff --exit-code
 
       - name: Export Modrinth pack
-        run: packwiz modrinth export -o gregtech-colony-0.5.1-draft.mrpack
+        run: packwiz modrinth export -o gregtech-colony-0.6.0-draft.mrpack
 
       - uses: actions/upload-artifact@v4
         with:
           name: gregtech-colony-mrpack
-          path: gregtech-colony-0.5.1-draft.mrpack
+          path: gregtech-colony-0.6.0-draft.mrpack
 
   recipe-audit:
     runs-on: ubuntu-latest
@@ -74,6 +74,9 @@ jobs:
           data["recipe_audit_stop"] = True
           json.dump(data, open(path, "w"))
           PY
+          # The audit walks every recipe on one server tick. The default 60s watchdog
+          # kills that tick on a slow runner before GTC_AUDIT_DONE is printed.
+          printf 'max-tick-time=600000\n' > server.properties
           ./run.sh nogui > /tmp/audit.log 2>&1 &
           pid=$!
           for i in $(seq 1 100); do

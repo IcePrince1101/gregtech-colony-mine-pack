@@ -10,7 +10,7 @@ hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/achievements.snbt"
-hash = "b33922936f9b0f9e244cce46a230e20abc2fa700b5edde6dadf813a4386cd5a0"
+hash = "845f855fcb95a06c971f93495ec31cf48321465e8e4464f0dba3cd2a33f53166"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bronze_draft.snbt"
@@ -47,6 +47,10 @@ hash = "ad2c0ed43c96ee437f3fbebccdfa3c52bb3d3c796701045aee4d7674d96e5b08"
 [[files]]
 file = "config/ftbquests/quests/chapters/lv.snbt"
 hash = "aebc7ae1972f4cf6b3ac5f05ce031ff111a9443da90598e71d82e4bfbb7f8e09"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/lv_draft.snbt"
+hash = "22f6df5db8e5d55265e640ecba6ed5e840c463680c5cd8bff1896d719223278d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic.snbt"
@@ -182,7 +186,7 @@ hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 
 [[files]]
 file = "kubejs/server_scripts/audit/recipe_audit.js"
-hash = "e47b5f7f22a106551b2b974df17d76158a03b768e2ad23be634b9fc64b5e987f"
+hash = "9e87cf7d73e714973d3b62f5b5de3caf29d112ab1d7f149cf544d7265b55d7f1"
 
 [[files]]
 file = "kubejs/server_scripts/eras/ev.js"
@@ -198,7 +202,7 @@ hash = "e9d45381a849b61e5cb9bbb34eeb77ad3ca1c07216303028f26740055f18246c"
 
 [[files]]
 file = "kubejs/server_scripts/eras/lv.js"
-hash = "4aaa2b78c694f37ce29a38571c45dce5e028bcf50881d5f1842facbddb083ea7"
+hash = "75e24ebc4544ef5303d74a9fa3acfadb89b8d2cbfec64d4fd1c62639ed99b777"
 
 [[files]]
 file = "kubejs/server_scripts/eras/mv.js"
