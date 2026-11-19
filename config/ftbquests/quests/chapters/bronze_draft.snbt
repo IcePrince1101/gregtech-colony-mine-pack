@@ -1,0 +1,894 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "bronze_draft"
+	group: "000000000000309F"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "00000000000041F2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Смешай медь и олово. Нужны бронзовая пыль, слиток и пластина."
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "0000000000004401"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Пыль, слиток, пластина"
+			tasks: [
+				{
+					id: "0000000000004410"
+					type: "item"
+					item: "gtceu:bronze_dust"
+				}
+				{
+					id: "0000000000004411"
+					type: "item"
+					item: "gtceu:bronze_ingot"
+				}
+				{
+					id: "0000000000004412"
+					type: "item"
+					item: "gtceu:bronze_plate"
+				}
+			]
+			title: "Бронза"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Бронзовый корпус машины и малый угольный котёл дают первый пар."
+			]
+			icon: "gtceu:bronze_machine_casing"
+			id: "0000000000004402"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Малый угольный котёл"
+			tasks: [
+				{
+					id: "0000000000004413"
+					type: "item"
+					item: "gtceu:bronze_machine_casing"
+				}
+				{
+					id: "0000000000004414"
+					type: "item"
+					item: "gtceu:lp_steam_solid_boiler"
+				}
+			]
+			title: "Корпус и котёл"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004402"
+			]
+			description: [
+				"Паровой молот, компрессор и сплавщик. Сплавщик делает андезитовый сплав."
+			]
+			icon: "gtceu:lp_steam_alloy_smelter"
+			id: "0000000000004403"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Молот, компрессор, сплавщик"
+			tasks: [
+				{
+					id: "0000000000004415"
+					type: "item"
+					item: "gtceu:lp_steam_forge_hammer"
+				}
+				{
+					id: "0000000000004416"
+					type: "item"
+					item: "gtceu:lp_steam_compressor"
+				}
+				{
+					id: "0000000000004417"
+					type: "item"
+					item: "gtceu:lp_steam_alloy_smelter"
+				}
+			]
+			title: "Паровые станки"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004403"
+			]
+			description: [
+				"Паровой экстрактор вытягивает липкую смолу. Она нужна покрытой плате."
+			]
+			icon: "gtceu:sticky_resin"
+			id: "0000000000004404"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Паровой экстрактор"
+			tasks: [
+				{
+					id: "0000000000004418"
+					type: "item"
+					item: "gtceu:sticky_resin"
+				}
+				{
+					id: "0000000000004419"
+					type: "item"
+					item: "gtceu:lp_steam_extractor"
+				}
+			]
+			title: "Смола"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004404"
+			]
+			description: [
+				"Собери домну и выплавь первый стальной слиток."
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "0000000000004405"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Первая сталь"
+			tasks: [
+				{
+					id: "000000000000441A"
+					type: "item"
+					item: "gtceu:primitive_blast_furnace"
+				}
+				{
+					id: "000000000000441B"
+					type: "item"
+					item: "gtceu:steel_ingot"
+				}
+			]
+			title: "Примитивная домна"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004403"
+			]
+			description: [
+				"Сплавщик варит андезит с железным самородком. Это начало Create."
+			]
+			icon: "create:andesite_alloy"
+			id: "000000000000440A"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "000000000000441C"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+			]
+			title: "Андезитовый сплав"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"000000000000440A"
+			]
+			description: [
+				"Малое водяное колесо крутит первые механизмы."
+			]
+			icon: "create:water_wheel"
+			id: "000000000000440B"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "000000000000441D"
+					type: "item"
+					item: "create:water_wheel"
+				}
+			]
+			title: "Водяное колесо"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"000000000000440A"
+				"0000000000004401"
+			]
+			description: [
+				"Шестерня Create собирается с бронзовой шестерёнкой."
+			]
+			icon: "create:cogwheel"
+			id: "000000000000440C"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "000000000000441E"
+					type: "item"
+					item: "create:cogwheel"
+				}
+			]
+			title: "Бронзовая шестерня"
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000440C"
+			]
+			description: [
+				"Пресс нужен, чтобы получить покрытую плату."
+			]
+			icon: "create:mechanical_press"
+			id: "000000000000440D"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Покрытая плата"
+			tasks: [
+				{
+					id: "000000000000441F"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+			]
+			title: "Механический пресс"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Алтарь духов готовит душевную сталь."
+			]
+			icon: "malum:spirit_altar"
+			id: "000000000000440E"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Malum"
+			tasks: [
+				{
+					id: "0000000000004420"
+					type: "item"
+					item: "malum:spirit_altar"
+				}
+			]
+			title: "Алтарь духов"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"000000000000440E"
+				"0000000000004405"
+			]
+			description: [
+				"Алтарь превращает сталь в душевную сталь. Слиток идёт в вакуумную лампу."
+			]
+			icon: "malum:soul_stained_steel_ingot"
+			id: "000000000000440F"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Провод лампы"
+			tasks: [
+				{
+					id: "0000000000004421"
+					type: "item"
+					item: "malum:soul_stained_steel_ingot"
+				}
+			]
+			title: "Душевная сталь"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004405"
+				"000000000000440F"
+			]
+			description: [
+				"Стеклянная трубка и вакуумная лампа. Лампа собирается из трубки, стальных болтов и душевной стали."
+			]
+			icon: "gtceu:vacuum_tube"
+			id: "0000000000004406"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Трубка и вакуум"
+			tasks: [
+				{
+					id: "0000000000004422"
+					type: "item"
+					item: "gtceu:glass_tube"
+				}
+				{
+					id: "0000000000004423"
+					type: "item"
+					item: "gtceu:vacuum_tube"
+				}
+			]
+			title: "Лампа"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004404"
+				"000000000000440D"
+			]
+			description: [
+				"Деревянная пластина, липкая смола и механический пресс."
+			]
+			icon: "gtceu:resin_circuit_board"
+			id: "0000000000004407"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Пресс и смола"
+			tasks: [
+				{
+					id: "0000000000004424"
+					type: "item"
+					item: "gtceu:resin_circuit_board"
+				}
+			]
+			title: "Покрытая плата"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004407"
+			]
+			description: [
+				"Базовая плата делается из покрытой."
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "0000000000004408"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Из покрытой"
+			tasks: [
+				{
+					id: "0000000000004425"
+					type: "item"
+					item: "gtceu:resin_printed_circuit_board"
+				}
+			]
+			title: "Базовая плата"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004408"
+				"0000000000004406"
+			]
+			description: [
+				"Базовая электронная схема. Сюда сходятся пар, пресс и душевная сталь."
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "0000000000004409"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ключ эпохи"
+			tasks: [
+				{
+					id: "0000000000004426"
+					type: "item"
+					item: "gtceu:basic_electronic_circuit"
+				}
+			]
+			title: "Базовая схема"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Бронзовая пила режет брёвна на доски щедрее, чем руки."
+			]
+			icon: "gtceu:bronze_saw"
+			id: "0000000000004427"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Больше досок"
+			tasks: [
+				{
+					id: "0000000000004428"
+					type: "item"
+					item: "gtceu:bronze_saw"
+				}
+			]
+			title: "Бронзовая пила"
+			x: -7.6d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004403"
+			]
+			description: [
+				"Паровой мацератор дробит руду раньше электрических машин."
+			]
+			icon: "gtceu:lp_steam_macerator"
+			id: "0000000000004429"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Дробление"
+			tasks: [
+				{
+					id: "000000000000442A"
+					type: "item"
+					item: "gtceu:lp_steam_macerator"
+				}
+			]
+			title: "Паровой мацератор"
+			x: -7.6d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004405"
+			]
+			description: [
+				"Огнеупорный кирпич и лёгкий бетон пригодятся у домны."
+			]
+			icon: "gtceu:firebrick"
+			id: "000000000000442B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Для домны"
+			tasks: [
+				{
+					id: "000000000000442C"
+					type: "item"
+					item: "gtceu:firebrick"
+				}
+				{
+					id: "000000000000442D"
+					type: "item"
+					item: "gtceu:light_concrete"
+				}
+			]
+			title: "Огнеупор и бетон"
+			x: -7.6d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Редстоуновый двигатель и деревянная предметная труба."
+			]
+			icon: "buildcraftcore:engine_redstone"
+			id: "000000000000442E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "BuildCraft"
+			tasks: [
+				{
+					id: "000000000000442F"
+					type: "item"
+					item: "buildcraftcore:engine_redstone"
+				}
+				{
+					id: "0000000000004430"
+					type: "item"
+					item: "buildcrafttransport:wood_item"
+				}
+			]
+			title: "Двигатель и труба"
+			x: -7.6d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Торф горит в котле и коксуется в древесный уголь."
+			]
+			icon: "forestry:peat"
+			id: "0000000000004431"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Forestry"
+			tasks: [
+				{
+					id: "0000000000004432"
+					type: "item"
+					item: "forestry:peat"
+				}
+			]
+			title: "Торф"
+			x: -7.6d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"000000000000440B"
+			]
+			description: [
+				"Жернов мелет без пара."
+			]
+			icon: "create:millstone"
+			id: "0000000000004433"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "0000000000004434"
+					type: "item"
+					item: "create:millstone"
+				}
+			]
+			title: "Жернов"
+			x: -7.6d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"000000000000440C"
+			]
+			description: [
+				"Рельс, станция и сигнал. Дорога собирается из бронзы."
+			]
+			icon: "create:track"
+			id: "0000000000004435"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Рельс, станция, сигнал"
+			tasks: [
+				{
+					id: "0000000000004436"
+					type: "item"
+					item: "create:track"
+				}
+				{
+					id: "0000000000004437"
+					type: "item"
+					item: "create:track_station"
+				}
+				{
+					id: "0000000000004438"
+					type: "item"
+					item: "create:track_signal"
+				}
+			]
+			title: "Поезд"
+			x: -7.6d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Распространитель и бассейн маны. Угольный блок в бассейне становится алмазом."
+			]
+			icon: "botania:mana_spreader"
+			id: "0000000000004439"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Botania"
+			tasks: [
+				{
+					id: "000000000000443A"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+				{
+					id: "000000000000443B"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+			]
+			title: "Поток маны"
+			x: 7.6d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Камера насыщения источника."
+			]
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "000000000000443C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Ars Nouveau"
+			tasks: [
+				{
+					id: "000000000000443D"
+					type: "item"
+					item: "ars_nouveau:imbuement_chamber"
+				}
+			]
+			title: "Камера насыщения"
+			x: 7.6d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Алтарь крови первого ранга."
+			]
+			icon: "bloodmagic:altar"
+			id: "000000000000443E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Первый ранг"
+			tasks: [
+				{
+					id: "000000000000443F"
+					type: "item"
+					item: "bloodmagic:altar"
+				}
+			]
+			title: "Кровавый алтарь"
+			x: 7.6d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Хижина лесоруба."
+			]
+			icon: "minecolonies:blockhutlumberjack"
+			id: "0000000000004440"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004441"
+					type: "item"
+					item: "minecolonies:blockhutlumberjack"
+				}
+			]
+			title: "Лесоруб"
+			x: 7.6d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Шахта колонии."
+			]
+			icon: "minecolonies:blockhutminer"
+			id: "0000000000004442"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004443"
+					type: "item"
+					item: "minecolonies:blockhutminer"
+				}
+			]
+			title: "Шахта колонии"
+			x: 7.6d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Ферма колонии."
+			]
+			icon: "minecolonies:blockhutfarmer"
+			id: "0000000000004444"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004445"
+					type: "item"
+					item: "minecolonies:blockhutfarmer"
+				}
+			]
+			title: "Ферма"
+			x: 7.6d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Плавильня колонии."
+			]
+			icon: "minecolonies:blockhutsmeltery"
+			id: "0000000000004446"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004447"
+					type: "item"
+					item: "minecolonies:blockhutsmeltery"
+				}
+			]
+			title: "Плавильня колонии"
+			x: 7.6d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Зайди в подземелье Dungeon Crawl."
+			]
+			icon: "minecraft:mossy_stone_bricks"
+			id: "0000000000004448"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Dungeon Crawl"
+			tasks: [
+				{
+					id: "000000000000444C"
+					type: "structure"
+					structure: "dungeoncrawl:dungeon"
+				}
+			]
+			title: "Подземелье Crawl"
+			x: 10.2d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Зайди в любое улучшенное подземелье YUNG."
+			]
+			icon: "minecraft:spawner"
+			id: "0000000000004449"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "YUNG"
+			tasks: [
+				{
+					id: "000000000000444D"
+					type: "structure"
+					structure: "#betterdungeons:better_dungeons"
+				}
+			]
+			title: "Лучшие подземелья"
+			x: 10.2d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Зайди в хижину ведьмы."
+			]
+			icon: "minecraft:cauldron"
+			id: "000000000000444A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "YUNG"
+			tasks: [
+				{
+					id: "000000000000444E"
+					type: "structure"
+					structure: "betterwitchhuts:witch_hut"
+				}
+			]
+			title: "Хижина ведьмы"
+			x: 10.2d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Зайди в поместье разбойников."
+			]
+			icon: "minecraft:emerald"
+			id: "000000000000444B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Dungeons and Taverns"
+			tasks: [
+				{
+					id: "000000000000444F"
+					type: "structure"
+					structure: "nova_structures:illager_manor"
+				}
+			]
+			title: "Поместье разбойников"
+			x: 10.2d
+			y: 10.5d
+		}
+	]
+	subtitle: "Три ветки к схеме"
+	title: "2. Бронза и пар"
+}
