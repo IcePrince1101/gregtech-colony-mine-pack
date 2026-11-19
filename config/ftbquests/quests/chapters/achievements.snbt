@@ -151,6 +151,78 @@
 			x: 3.6d
 			y: 3.6d
 		}
+		{
+			description: [
+				"Сдай 512 алюминиевых слитков."
+				"Награда: скоро."
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "0000000000004321"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Низкое напряжение"
+			tasks: [
+				{
+					id: "0000000000004324"
+					consume_items: true
+					type: "item"
+					item: "gtceu:aluminium_ingot"
+					count: 512L
+				}
+			]
+			title: "512 алюминия"
+			x: 7.2d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Сдай 256 базовых схем."
+				"Награда: скоро."
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "0000000000004322"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Низкое напряжение"
+			tasks: [
+				{
+					id: "0000000000004325"
+					consume_items: true
+					type: "item"
+					item: "gtceu:basic_electronic_circuit"
+					count: 256L
+				}
+			]
+			title: "256 схем"
+			x: 7.2d
+			y: 1.8d
+		}
+		{
+			description: [
+				"Сдай 64 мотора LV."
+				"Награда: скоро."
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "0000000000004323"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Низкое напряжение"
+			tasks: [
+				{
+					id: "0000000000004326"
+					consume_items: true
+					type: "item"
+					item: "gtceu:lv_electric_motor"
+					count: 64L
+				}
+			]
+			title: "64 мотора"
+			x: 7.2d
+			y: 3.6d
+		}
 	]
 	subtitle: "Награда: скоро."
 	title: "Достижения"

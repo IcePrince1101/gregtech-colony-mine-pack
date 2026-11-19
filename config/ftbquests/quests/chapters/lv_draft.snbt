@@ -1,0 +1,1167 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "lv_draft"
+	group: "000000000000309F"
+	icon: "gtceu:electric_blast_furnace"
+	id: "00000000000041F3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Стальной корпус и корпус машины LV. Из них собираются станки этой эпохи."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "0000000000004501"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Сталь и оловянный кабель"
+			tasks: [
+				{
+					id: "0000000000004580"
+					type: "item"
+					item: "gtceu:lv_machine_casing"
+				}
+				{
+					id: "0000000000004581"
+					type: "item"
+					item: "gtceu:lv_machine_hull"
+				}
+			]
+			title: "Корпус LV"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Поляризатор делает магнитный железный стержень. Из него собирается мотор."
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "0000000000004502"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Магнит и мотор"
+			tasks: [
+				{
+					id: "0000000000004582"
+					type: "item"
+					item: "gtceu:lv_polarizer"
+				}
+				{
+					id: "0000000000004583"
+					type: "item"
+					item: "gtceu:magnetic_iron_rod"
+				}
+				{
+					id: "0000000000004584"
+					type: "item"
+					item: "gtceu:lv_electric_motor"
+				}
+			]
+			title: "Мотор LV"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Паровая турбина превращает пар бронзового котла в EU."
+			]
+			icon: "gtceu:lv_steam_turbine"
+			id: "0000000000004503"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Первый ток"
+			tasks: [
+				{
+					id: "0000000000004585"
+					type: "item"
+					item: "gtceu:lv_steam_turbine"
+				}
+			]
+			title: "Паровая турбина"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004503"
+			]
+			description: [
+				"Электрический сплавщик. На нём купроникель, инвар и латунь."
+			]
+			icon: "gtceu:lv_alloy_smelter"
+			id: "0000000000004504"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Сплавы эпохи"
+			tasks: [
+				{
+					id: "0000000000004586"
+					type: "item"
+					item: "gtceu:lv_alloy_smelter"
+				}
+			]
+			title: "Сплавщик LV"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Волочильня тянет провод, в том числе тонкий стальной для катушки напряжения."
+			]
+			icon: "gtceu:lv_wiremill"
+			id: "0000000000004505"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Провод"
+			tasks: [
+				{
+					id: "0000000000004587"
+					type: "item"
+					item: "gtceu:lv_wiremill"
+				}
+			]
+			title: "Волочильня"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Поршень и насос. Без них нет сборщика и экстрактора."
+			]
+			icon: "gtceu:lv_electric_piston"
+			id: "0000000000004506"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Детали станков"
+			tasks: [
+				{
+					id: "0000000000004588"
+					type: "item"
+					item: "gtceu:lv_electric_piston"
+				}
+				{
+					id: "0000000000004589"
+					type: "item"
+					item: "gtceu:lv_electric_pump"
+				}
+			]
+			title: "Поршень и насос"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004506"
+			]
+			description: [
+				"Конвейер, роборука и сборщик. Катушка печи собирается здесь."
+			]
+			icon: "gtceu:lv_assembler"
+			id: "0000000000004507"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Сборка"
+			tasks: [
+				{
+					id: "000000000000458A"
+					type: "item"
+					item: "gtceu:lv_conveyor_module"
+				}
+				{
+					id: "000000000000458B"
+					type: "item"
+					item: "gtceu:lv_robot_arm"
+				}
+				{
+					id: "000000000000458C"
+					type: "item"
+					item: "gtceu:lv_assembler"
+				}
+			]
+			title: "Сборщик"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004506"
+			]
+			description: [
+				"Экстрактор плавит слиток оловянного сплава в жидкость для катушки."
+			]
+			icon: "gtceu:lv_extractor"
+			id: "0000000000004508"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Жидкий металл"
+			tasks: [
+				{
+					id: "000000000000458D"
+					type: "item"
+					item: "gtceu:lv_extractor"
+				}
+			]
+			title: "Экстрактор"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004504"
+				"0000000000004505"
+			]
+			description: [
+				"Медь и никель в сплавщике, потом двойной провод."
+			]
+			icon: "gtceu:cupronickel_ingot"
+			id: "0000000000004509"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Провод катушки"
+			tasks: [
+				{
+					id: "000000000000458E"
+					type: "item"
+					item: "gtceu:cupronickel_ingot"
+				}
+				{
+					id: "000000000000458F"
+					type: "item"
+					item: "gtceu:cupronickel_double_wire"
+				}
+			]
+			title: "Купроникель"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0000000000004504"
+			]
+			description: [
+				"Инвар из железа и никеля. Из пластин и каркаса получается жаростойкий корпус."
+			]
+			icon: "gtceu:heatproof_machine_casing"
+			id: "000000000000450A"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Корпус печи"
+			tasks: [
+				{
+					id: "0000000000004590"
+					type: "item"
+					item: "gtceu:invar_ingot"
+				}
+				{
+					id: "0000000000004591"
+					type: "item"
+					item: "gtceu:heatproof_machine_casing"
+				}
+			]
+			title: "Жаростойкий корпус"
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0000000000004504"
+				"0000000000004508"
+			]
+			description: [
+				"Олово и железо. Экстрактор плавит слиток: жидкость идёт в катушку."
+			]
+			icon: "gtceu:tin_alloy_ingot"
+			id: "000000000000450B"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Для катушки"
+			tasks: [
+				{
+					id: "0000000000004592"
+					type: "item"
+					item: "gtceu:tin_alloy_ingot"
+				}
+			]
+			title: "Оловянный сплав"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"0000000000004507"
+				"0000000000004509"
+				"000000000000450B"
+			]
+			description: [
+				"Сборщик: двойной провод купроникеля, бронзовая фольга и жидкий оловянный сплав."
+			]
+			icon: "gtceu:cupronickel_coil_block"
+			id: "000000000000450C"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Нагрев печи"
+			tasks: [
+				{
+					id: "0000000000004593"
+					type: "item"
+					item: "gtceu:cupronickel_coil_block"
+				}
+			]
+			title: "Катушка купроникеля"
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"0000000000004505"
+				"0000000000004507"
+			]
+			description: [
+				"Катушка напряжения и два энергетических люка LV. Ими питается печь."
+			]
+			icon: "gtceu:lv_energy_input_hatch"
+			id: "000000000000450D"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Два люка"
+			tasks: [
+				{
+					id: "0000000000004594"
+					type: "item"
+					item: "gtceu:lv_voltage_coil"
+				}
+				{
+					id: "0000000000004595"
+					type: "item"
+					item: "gtceu:lv_energy_input_hatch"
+					count: 2L
+				}
+			]
+			title: "Энергетические люки"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Шина ввода, шина вывода, глушитель и люк обслуживания. Без них печь не работает."
+			]
+			icon: "gtceu:lv_input_bus"
+			id: "000000000000450E"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Обвязка"
+			tasks: [
+				{
+					id: "0000000000004596"
+					type: "item"
+					item: "gtceu:lv_input_bus"
+				}
+				{
+					id: "0000000000004597"
+					type: "item"
+					item: "gtceu:lv_output_bus"
+				}
+				{
+					id: "0000000000004598"
+					type: "item"
+					item: "gtceu:lv_muffler_hatch"
+				}
+				{
+					id: "0000000000004599"
+					type: "item"
+					item: "gtceu:maintenance_hatch"
+				}
+			]
+			title: "Шины и люки"
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Электролизёр. Пыль боксита он разбирает на пыль алюминия."
+			]
+			icon: "gtceu:lv_electrolyzer"
+			id: "000000000000450F"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Руда в пыль"
+			tasks: [
+				{
+					id: "000000000000459A"
+					type: "item"
+					item: "gtceu:lv_electrolyzer"
+				}
+			]
+			title: "Электролизёр"
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"000000000000450F"
+			]
+			description: [
+				"Пыль боксита и пыль алюминия. Печь плавит уже пыль, не руду."
+			]
+			icon: "gtceu:aluminium_dust"
+			id: "0000000000004510"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Перед печью"
+			tasks: [
+				{
+					id: "000000000000459B"
+					type: "item"
+					item: "gtceu:bauxite_dust"
+				}
+				{
+					id: "000000000000459C"
+					type: "item"
+					item: "gtceu:aluminium_dust"
+				}
+			]
+			title: "Пыль алюминия"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			dependencies: [
+				"0000000000004504"
+			]
+			description: [
+				"Латунь на сплавщике, из меди и цинка."
+			]
+			icon: "create:brass_ingot"
+			id: "0000000000004520"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "00000000000045A0"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+			]
+			title: "Латунь"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004520"
+			]
+			description: [
+				"Латунный корпус. На него садится механический сборщик."
+			]
+			icon: "create:brass_casing"
+			id: "0000000000004521"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "00000000000045A1"
+					type: "item"
+					item: "create:brass_casing"
+				}
+			]
+			title: "Латунный корпус"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004521"
+			]
+			description: [
+				"Механический сборщик. В рецепте базовая схема и латунный корпус."
+			]
+			icon: "create:mechanical_crafter"
+			id: "0000000000004522"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Схема и латунь"
+			tasks: [
+				{
+					id: "00000000000045A2"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+			]
+			title: "Механический сборщик"
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004522"
+			]
+			description: [
+				"Золотая пластина, базовая схема, шестерня и большая шестерня. Собирается на прессе."
+			]
+			icon: "create:precision_mechanism"
+			id: "0000000000004523"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "К печи"
+			tasks: [
+				{
+					id: "00000000000045A3"
+					type: "item"
+					item: "create:precision_mechanism"
+				}
+			]
+			title: "Прецизионный механизм"
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Пустой сланец. Камень на кровавом алтаре."
+			]
+			icon: "bloodmagic:blankslate"
+			id: "0000000000004530"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Blood Magic"
+			tasks: [
+				{
+					id: "00000000000045B0"
+					type: "item"
+					item: "bloodmagic:blankslate"
+				}
+			]
+			title: "Пустой сланец"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004530"
+			]
+			description: [
+				"Слабая сфера крови. Алмаз для неё получается из блока угля на алтаре маны."
+			]
+			icon: "bloodmagic:weakbloodorb"
+			id: "0000000000004531"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Первая сфера"
+			tasks: [
+				{
+					id: "00000000000045B1"
+					type: "item"
+					item: "bloodmagic:weakbloodorb"
+				}
+			]
+			title: "Слабая сфера"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004531"
+			]
+			description: [
+				"Пустая руна. Нужны сфера, пустой сланец и камень."
+			]
+			icon: "bloodmagic:blankrune"
+			id: "0000000000004532"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Заготовка руны"
+			tasks: [
+				{
+					id: "00000000000045B2"
+					type: "item"
+					item: "bloodmagic:blankrune"
+				}
+			]
+			title: "Пустая руна"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004532"
+			]
+			description: [
+				"Восемь рун скорости кольцом на блок ниже алтаря поднимают его до второго яруса."
+			]
+			icon: "bloodmagic:speedrune"
+			id: "0000000000004533"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Второй ярус"
+			tasks: [
+				{
+					id: "00000000000045B3"
+					type: "item"
+					item: "bloodmagic:speedrune"
+					count: 8L
+				}
+			]
+			title: "Руны скорости"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004533"
+			]
+			description: [
+				"Усиленный сланец. Пустой сланец на алтаре второго яруса. Он входит в контроллер печи."
+			]
+			icon: "bloodmagic:reinforcedslate"
+			id: "0000000000004534"
+			rewards: [ ]
+			shape: "square"
+			size: 1.0d
+			subtitle: "К печи"
+			tasks: [
+				{
+					id: "00000000000045B4"
+					type: "item"
+					item: "bloodmagic:reinforcedslate"
+				}
+			]
+			title: "Усиленный сланец"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000450A"
+				"000000000000450C"
+				"000000000000450D"
+				"000000000000450E"
+				"0000000000004510"
+				"0000000000004523"
+				"0000000000004534"
+			]
+			description: [
+				"Контроллер домны и первый слиток алюминия. Катушки внутри, жаростойкие корпуса снаружи."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "0000000000004511"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ключ эпохи"
+			tasks: [
+				{
+					id: "000000000000459D"
+					type: "item"
+					item: "gtceu:electric_blast_furnace"
+				}
+				{
+					id: "000000000000459E"
+					type: "item"
+					item: "gtceu:aluminium_ingot"
+				}
+			]
+			title: "Электродуговая печь"
+			x: 0.0d
+			y: 24.5d
+		}
+		{
+			dependencies: [
+				"0000000000004504"
+			]
+			description: [
+				"Химический реактор. На нём серная кислота."
+			]
+			icon: "gtceu:lv_chemical_reactor"
+			id: "0000000000004540"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Кислота"
+			tasks: [
+				{
+					id: "00000000000045C0"
+					type: "item"
+					item: "gtceu:lv_chemical_reactor"
+				}
+			]
+			title: "Химический реактор"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Центрифуга. Липкая смола даёт клей."
+			]
+			icon: "gtceu:lv_centrifuge"
+			id: "0000000000004541"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Клей"
+			tasks: [
+				{
+					id: "00000000000045C1"
+					type: "item"
+					item: "gtceu:lv_centrifuge"
+				}
+			]
+			title: "Центрифуга"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Рудный сканер LV. Ищет жилы, не заменяет кирку."
+			]
+			icon: "gtceu:prospector.lv"
+			id: "0000000000004542"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Поиск жил"
+			tasks: [
+				{
+					id: "00000000000045C2"
+					type: "item"
+					item: "gtceu:prospector.lv"
+				}
+			]
+			title: "Рудный сканер"
+			x: 8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Корпус маленькой батареи LV."
+			]
+			icon: "gtceu:lv_battery_hull"
+			id: "0000000000004543"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Запас EU"
+			tasks: [
+				{
+					id: "00000000000045C3"
+					type: "item"
+					item: "gtceu:lv_battery_hull"
+				}
+			]
+			title: "Батарея"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0000000000004506"
+			]
+			description: [
+				"Генератор внутреннего сгорания. Ток из жидкого топлива, не из пара."
+			]
+			icon: "gtceu:lv_combustion"
+			id: "0000000000004544"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Вместо турбины"
+			tasks: [
+				{
+					id: "00000000000045C4"
+					type: "item"
+					item: "gtceu:lv_combustion"
+				}
+			]
+			title: "Генератор сгорания"
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"0000000000004506"
+			]
+			description: [
+				"Гибочный станок. Пластины и фольгу по-прежнему можно ковать руками."
+			]
+			icon: "gtceu:lv_bender"
+			id: "0000000000004545"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Пластины"
+			tasks: [
+				{
+					id: "00000000000045C5"
+					type: "item"
+					item: "gtceu:lv_bender"
+				}
+			]
+			title: "Гибочный станок"
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0000000000004507"
+			]
+			description: [
+				"Электрический резак. Продолжение бронзовой пилы."
+			]
+			icon: "gtceu:lv_cutter"
+			id: "0000000000004546"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Пила"
+			tasks: [
+				{
+					id: "00000000000045C6"
+					type: "item"
+					item: "gtceu:lv_cutter"
+				}
+			]
+			title: "Резак"
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Преобразователь LV. Принимает FE и отдаёт EU."
+			]
+			icon: "gtceu:lv_1a_energy_converter"
+			id: "0000000000004547"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "FE в EU"
+			tasks: [
+				{
+					id: "00000000000045C7"
+					type: "item"
+					item: "gtceu:lv_1a_energy_converter"
+				}
+			]
+			title: "Преобразователь"
+			x: 8.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+				"0000000000004522"
+			]
+			description: [
+				"Альтернатор Create Crafts and Additions. В рецепте мотор LV."
+			]
+			icon: "createaddition:alternator"
+			id: "0000000000004548"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Create"
+			tasks: [
+				{
+					id: "00000000000045C8"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+			]
+			title: "Альтернатор"
+			x: -8.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"000000000000450A"
+			]
+			description: [
+				"Три динамо Thermal: стирлинг, сжатие и магма. Для магмы нужен инвар."
+			]
+			icon: "thermal:dynamo_stirling"
+			id: "0000000000004549"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Thermal"
+			tasks: [
+				{
+					id: "00000000000045C9"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "00000000000045CA"
+					type: "item"
+					item: "thermal:dynamo_compression"
+				}
+				{
+					id: "00000000000045CB"
+					type: "item"
+					item: "thermal:dynamo_magmatic"
+				}
+			]
+			title: "Динамо"
+			x: -8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0000000000004501"
+			]
+			description: [
+				"Лазер и сборочный стол. Гейты собираются на столе из чипсета."
+			]
+			icon: "buildcraftsilicon:laser"
+			id: "000000000000454A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "BuildCraft"
+			tasks: [
+				{
+					id: "00000000000045CC"
+					type: "item"
+					item: "buildcraftsilicon:laser"
+				}
+				{
+					id: "00000000000045CD"
+					type: "item"
+					item: "buildcraftsilicon:assembly_table"
+				}
+			]
+			title: "Лазер и стол"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Варп-камень и путевой камень. В рецептах схема и мотор."
+			]
+			icon: "waystones:waystone"
+			id: "000000000000454B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Waystones"
+			tasks: [
+				{
+					id: "00000000000045CE"
+					type: "item"
+					item: "waystones:warp_stone"
+				}
+				{
+					id: "00000000000045CF"
+					type: "item"
+					item: "waystones:waystone"
+				}
+			]
+			title: "Путевой камень"
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Первый рюкзак. В рецепте базовая схема."
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "000000000000454C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sophisticated Backpacks"
+			tasks: [
+				{
+					id: "00000000000045D0"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+			]
+			title: "Рюкзак"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Университет колонии. В рецепте базовая схема."
+			]
+			icon: "minecolonies:blockhutuniversity"
+			id: "000000000000454D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "00000000000045D1"
+					type: "item"
+					item: "minecolonies:blockhutuniversity"
+				}
+			]
+			title: "Университет"
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Зайди в литейную When Dungeons Arise."
+			]
+			icon: "minecraft:blast_furnace"
+			id: "000000000000454E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "When Dungeons Arise"
+			tasks: [
+				{
+					id: "00000000000045D2"
+					type: "structure"
+					structure: "dungeons_arise:foundry"
+				}
+			]
+			title: "Литейная"
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Зайди в надземный город Repurposed Structures."
+			]
+			icon: "minecraft:bell"
+			id: "000000000000454F"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Repurposed Structures"
+			tasks: [
+				{
+					id: "00000000000045D3"
+					type: "structure"
+					structure: "repurposed_structures:city_overworld"
+				}
+			]
+			title: "Город"
+			x: 8.0d
+			y: 19.5d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Зайди в форт Illager Invasion."
+			]
+			icon: "minecraft:iron_axe"
+			id: "0000000000004550"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Illager Invasion"
+			tasks: [
+				{
+					id: "00000000000045D4"
+					type: "structure"
+					structure: "illagerinvasion:illager_fort"
+				}
+			]
+			title: "Форт захватчиков"
+			x: 8.0d
+			y: 21.0d
+		}
+	]
+	subtitle: "Три ветки к печи"
+	title: "3. LV, низкое напряжение"
+}
