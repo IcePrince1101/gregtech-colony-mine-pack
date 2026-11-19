@@ -80,6 +80,77 @@
 			x: 0.0d
 			y: 3.6d
 		}
+		{
+			description: [
+				"Сдай 1000 бронзовых слитков."
+				"Награда: скоро."
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "0000000000004311"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Бронза и пар"
+			tasks: [
+				{
+					id: "0000000000004314"
+					consume_items: true
+					type: "item"
+					item: "gtceu:bronze_ingot"
+					count: 1000L
+				}
+			]
+			title: "1 000 бронзы"
+			x: 3.6d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Сдай 256 стальных слитков."
+				"Награда: скоро."
+			]
+			icon: "gtceu:steel_ingot"
+			id: "0000000000004312"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Бронза и пар"
+			tasks: [
+				{
+					id: "0000000000004315"
+					consume_items: true
+					type: "item"
+					item: "gtceu:steel_ingot"
+					count: 256L
+				}
+			]
+			title: "256 стали"
+			x: 3.6d
+			y: 1.8d
+		}
+		{
+			description: [
+				"Сдай 100000 мВ пара."
+				"Награда: скоро."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "0000000000004313"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Бронза и пар"
+			tasks: [
+				{
+					id: "0000000000004316"
+					type: "fluid"
+					fluid: "gtceu:steam"
+					amount: 100000L
+				}
+			]
+			title: "100 000 мВ пара"
+			x: 3.6d
+			y: 3.6d
+		}
 	]
 	subtitle: "Награда: скоро."
 	title: "Достижения"

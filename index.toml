@@ -10,7 +10,11 @@ hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/achievements.snbt"
-hash = "f009af8b10f64b6df274e7e0af7f2b95f0b6bebe0ef7e47761145cb550b07982"
+hash = "b33922936f9b0f9e244cce46a230e20abc2fa700b5edde6dadf813a4386cd5a0"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/bronze_draft.snbt"
+hash = "da34a242d45e8da159a878f10ae2c06bee16b7f70d18eee45d653c76158a6700"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/colony.snbt"
