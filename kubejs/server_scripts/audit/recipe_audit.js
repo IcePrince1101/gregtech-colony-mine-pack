@@ -146,6 +146,22 @@ ServerEvents.loaded(function (event) {
     notes.push('no crafting recipe for ' + itemId)
   }
 
+  let chain = {
+    'gregtech_colony:vacuum_tube_hand': false,
+    'gtceu:alloy_smelter/glass_tube_steam': false,
+    'gtceu:shaped/basic_circuit_board': false,
+    'gtceu:shaped/electronic_circuit_lv': false
+  }
+  for (let i = 0; i < size; i++) {
+    let recipe = at(recipes, i)
+    let chainId = ''
+    try { chainId = '' + recipe.getId() } catch (error) { chainId = '' }
+    if (chainId && chain[chainId] === false) chain[chainId] = true
+  }
+  for (let chainId in chain) {
+    if (!chain[chainId]) fails.push('steam chain recipe missing ' + chainId)
+  }
+
   let lines = []
   let limit = fails.length < 80 ? fails.length : 80
   for (let i = 0; i < limit; i++) lines.push(fails[i])
