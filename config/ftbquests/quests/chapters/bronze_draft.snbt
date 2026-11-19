@@ -315,7 +315,7 @@
 				"000000000000440F"
 			]
 			description: [
-				"Стеклянная трубка и вакуумная лампа. Лампа собирается из трубки, стальных болтов и душевной стали."
+				"Лампу собирают руками: стеклянная трубка, два стальных болта, слиток душевной стали и провод из красного сплава. Сборщик делает её быстрее."
 			]
 			icon: "gtceu:vacuum_tube"
 			id: "0000000000004406"
@@ -690,85 +690,10 @@
 		}
 		{
 			dependencies: [
-				"000000000000420B"
-			]
-			description: [
-				"Хижина лесоруба."
-			]
-			icon: "minecolonies:blockhutlumberjack"
-			id: "0000000000004440"
-			optional: true
-			rewards: [ ]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "Колония"
-			tasks: [
-				{
-					id: "0000000000004441"
-					type: "item"
-					item: "minecolonies:blockhutlumberjack"
-				}
-			]
-			title: "Лесоруб"
-			x: 7.6d
-			y: 6.0d
-		}
-		{
-			dependencies: [
-				"000000000000420B"
-			]
-			description: [
-				"Шахта колонии."
-			]
-			icon: "minecolonies:blockhutminer"
-			id: "0000000000004442"
-			optional: true
-			rewards: [ ]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "Колония"
-			tasks: [
-				{
-					id: "0000000000004443"
-					type: "item"
-					item: "minecolonies:blockhutminer"
-				}
-			]
-			title: "Шахта колонии"
-			x: 7.6d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"000000000000420B"
-			]
-			description: [
-				"Ферма колонии."
-			]
-			icon: "minecolonies:blockhutfarmer"
-			id: "0000000000004444"
-			optional: true
-			rewards: [ ]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "Колония"
-			tasks: [
-				{
-					id: "0000000000004445"
-					type: "item"
-					item: "minecolonies:blockhutfarmer"
-				}
-			]
-			title: "Ферма"
-			x: 7.6d
-			y: 9.0d
-		}
-		{
-			dependencies: [
 				"0000000000004401"
 			]
 			description: [
-				"Плавильня колонии."
+				"Плавильня колонии. В рецепте бронзовая пластина."
 			]
 			icon: "minecolonies:blockhutsmeltery"
 			id: "0000000000004446"

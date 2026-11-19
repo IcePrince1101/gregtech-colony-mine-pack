@@ -43,12 +43,28 @@ ServerEvents.recipes(function (event) {
     loops: 1
   }).id('gregtech_colony:coated_board')
 
-  event.remove({ output: 'gtceu:vacuum_tube' })
-  event.recipes.gtceu.assembler('vacuum_tube')
-    .itemInputs('gtceu:glass_tube', '2x gtceu:steel_bolt', 'malum:soul_stained_steel_ingot')
-    .itemOutputs('gtceu:vacuum_tube')
+  // Стеклянная трубка. Ванильный сплавщик на 16 EU паровая машина не берёт:
+  // пар обрабатывает только рецепты ULV, до 8 EU. Форм-пресс и застывание жидкости — машины LV.
+  event.recipes.gtceu.alloy_smelter('glass_tube_steam')
+    .itemInputs('gtceu:glass_dust')
+    .notConsumable('gtceu:ball_casting_mold')
+    .itemOutputs('gtceu:glass_tube')
     .duration(160)
     .EUt(7)
+
+  // Лампа руками в бронзе. Сборщик остаётся более быстрым рецептом LV.
+  event.remove({ output: 'gtceu:vacuum_tube' })
+  event.shaped('gtceu:vacuum_tube', [' S ', 'BTB', 'WWW'], {
+    S: 'malum:soul_stained_steel_ingot',
+    B: 'gtceu:steel_bolt',
+    T: 'gtceu:glass_tube',
+    W: 'gtceu:red_alloy_single_wire'
+  }).id('gregtech_colony:vacuum_tube_hand')
+  event.recipes.gtceu.assembler('vacuum_tube')
+    .itemInputs('gtceu:glass_tube', '2x gtceu:steel_bolt', 'malum:soul_stained_steel_ingot')
+    .itemOutputs('2x gtceu:vacuum_tube')
+    .duration(80)
+    .EUt(30)
 
   event.remove({ id: 'malum:spirit_infusion/soul_stained_steel_ingot' })
   event.custom({

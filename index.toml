@@ -14,7 +14,7 @@ hash = "b33922936f9b0f9e244cce46a230e20abc2fa700b5edde6dadf813a4386cd5a0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bronze_draft.snbt"
-hash = "da34a242d45e8da159a878f10ae2c06bee16b7f70d18eee45d653c76158a6700"
+hash = "397c4f75216d7db4abf441176544c71ac780a105bce4aed9fe572614ad418fc0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/colony.snbt"
@@ -66,7 +66,7 @@ hash = "7afc392283e738984d9c28aa46f20b20380c9b07f6622c4d992cbd32703d3b43"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stone_draft.snbt"
-hash = "b2303774c0a2acea9e2692b278cd74e3dc844bf3965b4487a7784d3cc2f58848"
+hash = "8498653301971fa9f207afd9a008daf32ab45eaa09cce0d201a029daa233d25f"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -182,7 +182,7 @@ hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 
 [[files]]
 file = "kubejs/server_scripts/audit/recipe_audit.js"
-hash = "b51f71183b93fd04924bc4b42c3549d648170e4c4ba1908cce2a54970584690d"
+hash = "e47b5f7f22a106551b2b974df17d76158a03b768e2ad23be634b9fc64b5e987f"
 
 [[files]]
 file = "kubejs/server_scripts/eras/ev.js"
@@ -206,7 +206,7 @@ hash = "f4583283941abfd3de4abfd2c2d3e3a4aabc6d5b9b733005693f40b19a54df47"
 
 [[files]]
 file = "kubejs/server_scripts/eras/steam.js"
-hash = "34b5cffadcb6f5f14658827c30dbde0ce334284ded4944434236db359a1eff91"
+hash = "aafa2616a5d5df915fccd7e48246af42cfe6498f3f1a79456f615a9a9e4eccdd"
 
 [[files]]
 file = "kubejs/server_scripts/eras/stone.js"
@@ -451,6 +451,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-ultimine-forge.pw.toml"
 hash = "95b3a27eadc2854462de996ddce5ff2468771e13ac97c46ed96d41a6edaa056e"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+hash = "b79b02bab09c52e0281c2e764f99409cd8d7a5d56539225c9b8ec0e263d09d56"
 metafile = true
 
 [[files]]

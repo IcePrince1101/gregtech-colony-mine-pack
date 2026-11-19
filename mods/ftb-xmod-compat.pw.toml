@@ -1,0 +1,8 @@
+name = "FTB XMod Compat"
+filename = "ftb-xmod-compat-forge-2.1.2.jar"
+side = "both"
+
+[download]
+url = "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-xmod-compat-forge/2.1.2/ftb-xmod-compat-forge-2.1.2.jar"
+hash-format = "sha512"
+hash = "3af8070f1f582d3c0a61f141b2de0f20085979bac2f64ab35f51d4f998c1b59597a376ead8b65e34ef90c43f210d57e2fec151566b513b8cf30b9587e1572670"
