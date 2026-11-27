@@ -82,6 +82,13 @@ ServerEvents.recipes(function (event) {
     T: 'gtceu:steel_plate'
   }).id('gregtech_colony:runic_altar')
 
+  event.remove({ id: 'minecolonies:blockhutmechanic' })
+  event.shaped('minecolonies:blockhutmechanic', ['XTX', 'XMX', 'XXX'], {
+    X: '#minecraft:planks',
+    T: 'structurize:sceptergold',
+    M: 'gtceu:lv_electric_motor'
+  }).id('gregtech_colony:colony_mechanic')
+
   event.remove({ id: 'minecolonies:blockhutuniversity' })
   event.shaped('minecolonies:blockhutuniversity', ['XTX', 'XCX', 'XBX'], {
     X: '#minecraft:planks',
@@ -93,4 +100,54 @@ ServerEvents.recipes(function (event) {
   event.remove({ id: 'forestry:smelter/bronze_from_ingots' })
   event.remove({ id: 'forestry:smelter/bronze_from_raw_materials' })
   event.remove({ id: 'forestry:gear_bronze' })
+
+  // Единственная руна до усиленного сланца. Рецепт MV на алюминии остаётся вторым путём.
+  event.shaped('bloodmagic:speedrune', ['ABA', 'CDC', 'ABA'], {
+    A: '#forge:stone',
+    B: 'bloodmagic:blankslate',
+    C: 'minecraft:sugar',
+    D: 'bloodmagic:blankrune'
+  }).id('gregtech_colony:speed_rune_altar')
+
+  // Латунь Create. Паровой сплавщик берёт только до 8 EU, этот рецепт идёт на LV.
+  event.recipes.gtceu.alloy_smelter('brass_ingot')
+    .itemInputs('gtceu:copper_dust', 'gtceu:zinc_dust')
+    .itemOutputs('2x create:brass_ingot')
+    .duration(100)
+    .EUt(16)
+
+  // Ванильный электролиз боксита на 60 EU. LV-электролизёр принимает до 32.
+  event.remove({ id: 'gtceu:electrolyzer/bauxite_electrolysis' })
+  event.recipes.gtceu.electrolyzer('bauxite_electrolysis')
+    .itemInputs('15x gtceu:bauxite_dust')
+    .itemOutputs('6x gtceu:aluminium_dust', 'gtceu:rutile_dust')
+    .outputFluids(Fluid.of('gtceu:oxygen', 9000))
+    .duration(270)
+    .EUt(30)
+
+  // Ванильный обжиг пыли на 120 EU. Два люка LV дают 64 EU/т.
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium' })
+  event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium_gas' })
+  event.recipes.gtceu.electric_blast_furnace('blast_aluminium')
+    .itemInputs('gtceu:aluminium_dust')
+    .circuit(1)
+    .itemOutputs('gtceu:aluminium_ingot')
+    .blastFurnaceTemp(1700)
+    .duration(884)
+    .EUt(60)
+  event.recipes.gtceu.electric_blast_furnace('blast_aluminium_gas')
+    .itemInputs('gtceu:aluminium_dust')
+    .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+    .circuit(2)
+    .itemOutputs('gtceu:aluminium_ingot')
+    .blastFurnaceTemp(1700)
+    .duration(592)
+    .EUt(60)
+
+  // Жидкий оловянный сплав нужен катушке, отдельного рецепта плавки не было.
+  event.recipes.gtceu.extractor('tin_alloy_fluid')
+    .itemInputs('gtceu:tin_alloy_ingot')
+    .outputFluids(Fluid.of('gtceu:tin_alloy', 144))
+    .duration(40)
+    .EUt(30)
 })

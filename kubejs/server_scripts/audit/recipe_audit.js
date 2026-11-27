@@ -150,16 +150,161 @@ ServerEvents.loaded(function (event) {
     'gregtech_colony:vacuum_tube_hand': false,
     'gtceu:alloy_smelter/glass_tube_steam': false,
     'gtceu:shaped/basic_circuit_board': false,
-    'gtceu:shaped/electronic_circuit_lv': false
+    'gtceu:shaped/electronic_circuit_lv': false,
+    'gregtech_colony:speed_rune_altar': false,
+    'gregtech_colony:colony_glassblower': false,
+    'gregtech_colony:colony_crusher': false,
+    'gregtech_colony:colony_mechanic': false,
+    'gtceu:alloy_smelter/brass_ingot': false,
+    'gtceu:electrolyzer/bauxite_electrolysis': false,
+    'gtceu:electric_blast_furnace/blast_aluminium': false,
+    'gtceu:electric_blast_furnace/blast_aluminium_gas': false,
+    'gtceu:extractor/tin_alloy_fluid': false
+  }
+  let voltageCap = {
+    'gtceu:electrolyzer/bauxite_electrolysis': 32,
+    'gtceu:electric_blast_furnace/blast_aluminium': 64,
+    'gtceu:electric_blast_furnace/blast_aluminium_gas': 64,
+    'gtceu:extractor/tin_alloy_fluid': 32,
+    'gtceu:alloy_smelter/brass_ingot': 32
+  }
+  function recipeVoltage(recipe) {
+    let text = ''
+    try { text = '' + recipe.inputEUt } catch (error) { return -1 }
+    let key = 'voltage='
+    let atPos = text.indexOf(key)
+    if (atPos < 0) return -1
+    let num = ''
+    for (let i = atPos + key.length; i < text.length; i++) {
+      let ch = text.charAt(i)
+      if (ch < '0' || ch > '9') break
+      num += ch
+    }
+    if (!num) return -1
+    return parseInt(num, 10)
   }
   for (let i = 0; i < size; i++) {
     let recipe = at(recipes, i)
     let chainId = ''
     try { chainId = '' + recipe.getId() } catch (error) { chainId = '' }
     if (chainId && chain[chainId] === false) chain[chainId] = true
+    if (chainId && voltageCap[chainId]) {
+      let voltage = recipeVoltage(recipe)
+      if (voltage < 0 || voltage > voltageCap[chainId]) {
+        fails.push('lv voltage ' + chainId + ' is ' + voltage + ', cap ' + voltageCap[chainId])
+      }
+    }
   }
   for (let chainId in chain) {
-    if (!chain[chainId]) fails.push('steam chain recipe missing ' + chainId)
+    if (!chain[chainId]) fails.push('chain recipe missing ' + chainId)
+  }
+
+  let questItems = [
+    'gtceu:lv_machine_casing',
+    'gtceu:lv_machine_hull',
+    'gtceu:lv_polarizer',
+    'gtceu:magnetic_iron_rod',
+    'gtceu:lv_electric_motor',
+    'gtceu:lv_steam_turbine',
+    'gtceu:lv_alloy_smelter',
+    'gtceu:lv_wiremill',
+    'gtceu:lv_electric_piston',
+    'gtceu:lv_electric_pump',
+    'gtceu:lv_conveyor_module',
+    'gtceu:lv_robot_arm',
+    'gtceu:lv_assembler',
+    'gtceu:lv_extractor',
+    'gtceu:cupronickel_ingot',
+    'gtceu:cupronickel_double_wire',
+    'gtceu:invar_ingot',
+    'gtceu:heatproof_machine_casing',
+    'gtceu:tin_alloy_ingot',
+    'gtceu:cupronickel_coil_block',
+    'gtceu:lv_voltage_coil',
+    'gtceu:lv_energy_input_hatch',
+    'gtceu:lv_input_bus',
+    'gtceu:lv_output_bus',
+    'gtceu:lv_muffler_hatch',
+    'gtceu:maintenance_hatch',
+    'gtceu:lv_electrolyzer',
+    'gtceu:bauxite_dust',
+    'gtceu:aluminium_dust',
+    'gtceu:rutile_dust',
+    'gtceu:zinc_dust',
+    'gtceu:electric_blast_furnace',
+    'gtceu:aluminium_ingot',
+    'gtceu:lv_chemical_reactor',
+    'gtceu:lv_centrifuge',
+    'gtceu:prospector.lv',
+    'gtceu:lv_battery_hull',
+    'gtceu:lv_combustion',
+    'gtceu:lv_bender',
+    'gtceu:lv_cutter',
+    'gtceu:lv_1a_energy_converter',
+    'create:brass_ingot',
+    'create:brass_casing',
+    'create:mechanical_crafter',
+    'create:precision_mechanism',
+    'createaddition:alternator',
+    'bloodmagic:blankslate',
+    'bloodmagic:weakbloodorb',
+    'bloodmagic:blankrune',
+    'bloodmagic:speedrune',
+    'bloodmagic:reinforcedslate',
+    'thermal:dynamo_stirling',
+    'thermal:dynamo_compression',
+    'thermal:dynamo_magmatic',
+    'buildcraftsilicon:laser',
+    'buildcraftsilicon:assembly_table',
+    'waystones:warp_stone',
+    'waystones:waystone',
+    'sophisticatedbackpacks:backpack',
+    'minecolonies:blockhutuniversity',
+    'minecolonies:blockhutglassblower',
+    'minecolonies:blockhutcrusher',
+    'minecolonies:blockhutmechanic',
+    'gtceu:lp_steam_solid_boiler',
+    'gtceu:lp_steam_liquid_boiler',
+    'gtceu:lp_steam_solar_boiler',
+    'gtceu:hp_steam_solid_boiler',
+    'gtceu:bronze_large_boiler',
+    'gtceu:lv_gas_turbine',
+    'gtceu:lv_battery_buffer_4x',
+    'create:water_wheel',
+    'create:large_water_wheel',
+    'create:windmill_bearing',
+    'create:steam_engine',
+    'buildcraftcore:engine_redstone',
+    'buildcraftenergy:engine_stone',
+    'buildcraftenergy:engine_iron',
+    'thermal:dynamo_numismatic',
+    'thermal:dynamo_lapidary',
+    'thermal:dynamo_disenchantment',
+    'thermal:dynamo_gourmand',
+    'botania:endoflame',
+    'botania:hydroangeas',
+    'botania:thermalily',
+    'botania:gourmaryllis',
+    'botania:mana_pool',
+    'botania:mana_spreader',
+    'botania:mana_tablet',
+    'bloodmagic:sacrificialdagger',
+    'bloodmagic:selfsacrificerune',
+    'ars_nouveau:source_jar',
+    'ars_nouveau:agronomic_sourcelink',
+    'malum:spirit_altar',
+    'malum:spirit_crucible',
+    'occultism:spirit_fire',
+    'forbidden_arcanus:arcane_crystal'
+  ]
+  if (itemRegistry) {
+    let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+    for (let i = 0; i < questItems.length; i++) {
+      let itemId = questItems[i]
+      let found = ''
+      try { found = '' + itemRegistry.getKey(itemRegistry.get(new ResourceLocation(itemId))) } catch (error) { found = '' }
+      if (found !== itemId) fails.push('quest item missing ' + itemId)
+    }
   }
 
   let lines = []

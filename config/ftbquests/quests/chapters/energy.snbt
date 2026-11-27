@@ -1,0 +1,565 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "energy"
+	group: "000000000000309F"
+	icon: "gtceu:lv_steam_turbine"
+	id: "00000000000041F4"
+	order_index: 45
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Справочник, не обязательная цепочка. Квест открывается вместе со своей эпохой."
+				"Круг можно пропустить. Награды нет."
+			]
+			icon: "ftbquests:book"
+			id: "0000000000004601"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.2d
+			subtitle: "Справочник"
+			tasks: [
+				{
+					id: "0000000000004680"
+					type: "checkmark"
+				}
+			]
+			title: "Как читать"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Печь греет еду и руду. Пара и EU она не даёт."
+				"Первый пар — угольный котёл бронзы."
+			]
+			icon: "minecraft:furnace"
+			id: "0000000000004602"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004681"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
+			title: "Печь"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Жжёт уголь, кокс или древесный уголь и кипятит воду."
+				"На полном нагреве 120 мВ пара в секунду. Один котёл кормит турбину лишь на несколько EU/т."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "0000000000004603"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004682"
+					type: "item"
+					item: "gtceu:lp_steam_solid_boiler"
+				}
+			]
+			title: "Угольный котёл"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Жжёт жидкое топливо, в первую очередь креозот."
+				"240 мВ пара в секунду. Топливо компактнее угля, но его надо наливать."
+			]
+			icon: "gtceu:lp_steam_liquid_boiler"
+			id: "0000000000004604"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004683"
+					type: "item"
+					item: "gtceu:lp_steam_liquid_boiler"
+				}
+			]
+			title: "Жидкостный котёл"
+			x: 2.2d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Греет воду солнцем. Ночью и под крышей молчит."
+				"120 мВ пара в секунду. Топлива не ест, серебряные пластины в рецепте."
+			]
+			icon: "gtceu:lp_steam_solar_boiler"
+			id: "0000000000004605"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004684"
+					type: "item"
+					item: "gtceu:lp_steam_solar_boiler"
+				}
+			]
+			title: "Солнечный котёл"
+			x: 4.4d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Тот же уголь, но стальной котёл высокого давления."
+				"300 мВ пара в секунду. Сталь нужна раньше, чем ток."
+			]
+			icon: "gtceu:hp_steam_solid_boiler"
+			id: "0000000000004606"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004685"
+					type: "item"
+					item: "gtceu:hp_steam_solid_boiler"
+				}
+			]
+			title: "Котёл высокого давления"
+			x: 6.6d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Малое колесо на потоке воды крутится около 8 RPM."
+				"Через альтернатор это около 6 FE/т, то есть 1.5 EU/т. Большое колесо даёт больше вращения."
+			]
+			icon: "create:water_wheel"
+			id: "0000000000004607"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004686"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "0000000000004687"
+					type: "item"
+					item: "create:large_water_wheel"
+				}
+			]
+			title: "Водяные колёса"
+			x: 0.0d
+			y: 5.8d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Ветряк крутит вал парусами. Чем выше и шире парус, тем сильнее."
+				"Сам EU не даёт: нужен альтернатор и преобразователь."
+			]
+			icon: "create:windmill_bearing"
+			id: "0000000000004608"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004688"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+			]
+			title: "Ветряк"
+			x: 2.2d
+			y: 5.8d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Паровой двигатель Create крутит вал от пара."
+				"Это вращение, не EU. В рецепте бронза."
+			]
+			icon: "create:steam_engine"
+			id: "0000000000004609"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004689"
+					type: "item"
+					item: "create:steam_engine"
+				}
+			]
+			title: "Паровой двигатель"
+			x: 4.4d
+			y: 5.8d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Редстоуновый двигатель работает от сигнала. Стирлинг жжёт твёрдое топливо."
+				"Оба дают MJ для BuildCraft, не EU. В рецептах бронзовые пластины."
+			]
+			icon: "buildcraftcore:engine_redstone"
+			id: "000000000000460A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "000000000000468A"
+					type: "item"
+					item: "buildcraftcore:engine_redstone"
+				}
+				{
+					id: "000000000000468B"
+					type: "item"
+					item: "buildcraftenergy:engine_stone"
+				}
+			]
+			title: "Двигатели BuildCraft"
+			x: 6.6d
+			y: 5.8d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Двигатель внутреннего сгорания BuildCraft жжёт жидкое топливо."
+				"Выход — MJ, не EU. Железная шестерня, без корпуса LV."
+			]
+			icon: "buildcraftenergy:engine_iron"
+			id: "000000000000460B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "000000000000468C"
+					type: "item"
+					item: "buildcraftenergy:engine_iron"
+				}
+			]
+			title: "ДВС BuildCraft"
+			x: 8.8d
+			y: 5.8d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Делает EU из пара. Потолок 32 EU/т."
+				"На полной мощности ест 64 мВ пара за тик. Котлов нужно несколько."
+			]
+			icon: "gtceu:lv_steam_turbine"
+			id: "0000000000004610"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "000000000000468D"
+					type: "item"
+					item: "gtceu:lv_steam_turbine"
+				}
+			]
+			title: "Паровая турбина"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Жжёт жидкое топливо: дизель, биодизель, лёгкое топливо и похожее."
+				"До 32 EU/т. Топливо плотнее пара, но его ещё надо получить."
+			]
+			icon: "gtceu:lv_combustion"
+			id: "0000000000004611"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "000000000000468E"
+					type: "item"
+					item: "gtceu:lv_combustion"
+				}
+			]
+			title: "Генератор сгорания"
+			x: 2.2d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Жжёт горючие газы. Потолок 32 EU/т."
+				"Машина LV, а большинство газов появляется позже."
+			]
+			icon: "gtceu:lv_gas_turbine"
+			id: "0000000000004612"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "000000000000468F"
+					type: "item"
+					item: "gtceu:lv_gas_turbine"
+				}
+			]
+			title: "Газовая турбина"
+			x: 4.4d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Альтернатор переводит вращение в FE: до 256 FE/т на 256 RPM."
+				"Малое колесо даёт около 6 FE/т. Курс 4 FE = 1 EU, так что это около 1.5 EU/т."
+			]
+			icon: "createaddition:alternator"
+			id: "0000000000004613"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "0000000000004690"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+			]
+			title: "Альтернатор"
+			x: 6.6d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Стирлинг жжёт твёрдое топливо, сжатие — жидкое, магма — лаву."
+				"Базово около 40 FE/т каждый. Для магмы нужен инвар. В EU это около 10 EU/т."
+			]
+			icon: "thermal:dynamo_stirling"
+			id: "0000000000004614"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "0000000000004691"
+					type: "item"
+					item: "thermal:dynamo_stirling"
+				}
+				{
+					id: "0000000000004692"
+					type: "item"
+					item: "thermal:dynamo_compression"
+				}
+				{
+					id: "0000000000004693"
+					type: "item"
+					item: "thermal:dynamo_magmatic"
+				}
+			]
+			title: "Динамо Thermal"
+			x: 8.8d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Преобразователь на 1 ампер: 4 FE становятся 1 EU."
+				"Потолок 128 FE/т на входе и 32 EU/т на выходе."
+			]
+			icon: "gtceu:lv_1a_energy_converter"
+			id: "0000000000004615"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "0000000000004694"
+					type: "item"
+					item: "gtceu:lv_1a_energy_converter"
+				}
+			]
+			title: "Преобразователь FE"
+			x: 0.0d
+			y: 9.8d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Буфер на четыре батареи хранит EU и не вырабатывает его."
+				"Нужен, когда генератор сильнее машин или их надо питать пакетом."
+			]
+			icon: "gtceu:lv_battery_buffer_4x"
+			id: "0000000000004616"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "0000000000004695"
+					type: "item"
+					item: "gtceu:lv_battery_buffer_4x"
+				}
+			]
+			title: "Буфер батарей"
+			x: 2.2d
+			y: 9.8d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Большой бронзовый котёл. Контроллер требует базовую схему, поэтому это уже LV."
+				"Пара больше, чем у малого котла, но это мультиблок."
+			]
+			icon: "gtceu:bronze_large_boiler"
+			id: "0000000000004617"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "0000000000004696"
+					type: "item"
+					item: "gtceu:bronze_large_boiler"
+				}
+			]
+			title: "Большой бронзовый котёл"
+			x: 4.4d
+			y: 9.8d
+		}
+		{
+			dependencies: [
+				"0000000000004511"
+			]
+			description: [
+				"Монеты, самоцветы, зачарованные книги и еда."
+				"В рецепте корпус и схема MV. Базово те же десятки FE/т. Стальной большой котёл и турбины выше LV придут со своими главами."
+			]
+			icon: "thermal:dynamo_numismatic"
+			id: "0000000000004618"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "MV"
+			tasks: [
+				{
+					id: "0000000000004697"
+					type: "item"
+					item: "thermal:dynamo_numismatic"
+				}
+				{
+					id: "0000000000004698"
+					type: "item"
+					item: "thermal:dynamo_lapidary"
+				}
+				{
+					id: "0000000000004699"
+					type: "item"
+					item: "thermal:dynamo_disenchantment"
+				}
+				{
+					id: "000000000000469A"
+					type: "item"
+					item: "thermal:dynamo_gourmand"
+				}
+			]
+			title: "Динамо MV"
+			x: 0.0d
+			y: 12.0d
+		}
+	]
+	subtitle: "Пар, вращение, FE и EU"
+	title: "Энергетика"
+}

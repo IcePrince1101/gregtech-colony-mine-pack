@@ -10,11 +10,11 @@ hash = "7d3c49d7e7e727780c29a20201b7dd4696c8948def989a1fe9095bc342b90557"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/achievements.snbt"
-hash = "b33922936f9b0f9e244cce46a230e20abc2fa700b5edde6dadf813a4386cd5a0"
+hash = "845f855fcb95a06c971f93495ec31cf48321465e8e4464f0dba3cd2a33f53166"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bronze_draft.snbt"
-hash = "397c4f75216d7db4abf441176544c71ac780a105bce4aed9fe572614ad418fc0"
+hash = "33eaa2cb8e63f41a93eb51fd96001a04e93e3bc69cc61f0bb85a65e09f463111"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/colony.snbt"
@@ -23,6 +23,10 @@ hash = "d51ef058c46aaf42577fde3513adf134071d4a3019edc3494d1612d64e1a7f31"
 [[files]]
 file = "config/ftbquests/quests/chapters/dungeons.snbt"
 hash = "3d5c06dda25f7c353c45406dc90a647cf868de69f82aec8d0015d7e80794b8a9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/energy.snbt"
+hash = "82155b41b2222c3e323296c5dd0b8c7d95151791a4f658055940b0ad8b8342f0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ev.snbt"
@@ -49,8 +53,16 @@ file = "config/ftbquests/quests/chapters/lv.snbt"
 hash = "aebc7ae1972f4cf6b3ac5f05ce031ff111a9443da90598e71d82e4bfbb7f8e09"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/lv_draft.snbt"
+hash = "64d4169e8f8c4e482206cac13b650901fd0290f82b62fb9b800739bd7e205f0b"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/magic.snbt"
 hash = "9bcf66c6a473aabc3941e4422432fbbb6379774aaf55d1d65578ea2e0dca01b1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/magic_energy.snbt"
+hash = "5c596eba606090458f0ac0aabb21be422fb4b2156ec8e3a1d6eb48d45498f3a5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
@@ -182,7 +194,7 @@ hash = "dadbf21b18c54636de3ed840393b6c5ca05ec286f51a1e80208a80a9b362af1e"
 
 [[files]]
 file = "kubejs/server_scripts/audit/recipe_audit.js"
-hash = "e47b5f7f22a106551b2b974df17d76158a03b768e2ad23be634b9fc64b5e987f"
+hash = "ffd14cba9bdba48e69a0495dadbf35f21566bae6f7c8a59c62d094abef801254"
 
 [[files]]
 file = "kubejs/server_scripts/eras/ev.js"
@@ -198,7 +210,7 @@ hash = "e9d45381a849b61e5cb9bbb34eeb77ad3ca1c07216303028f26740055f18246c"
 
 [[files]]
 file = "kubejs/server_scripts/eras/lv.js"
-hash = "4aaa2b78c694f37ce29a38571c45dce5e028bcf50881d5f1842facbddb083ea7"
+hash = "ab7cc87af43d337f0668ddd30d9ec8b8838720bd566efef06bb3405599ffccbf"
 
 [[files]]
 file = "kubejs/server_scripts/eras/mv.js"
@@ -206,7 +218,7 @@ hash = "f4583283941abfd3de4abfd2c2d3e3a4aabc6d5b9b733005693f40b19a54df47"
 
 [[files]]
 file = "kubejs/server_scripts/eras/steam.js"
-hash = "aafa2616a5d5df915fccd7e48246af42cfe6498f3f1a79456f615a9a9e4eccdd"
+hash = "2b4f9556ef992785069342302b31dafec44552d3eac1bafb93aa7263dc8edc96"
 
 [[files]]
 file = "kubejs/server_scripts/eras/stone.js"

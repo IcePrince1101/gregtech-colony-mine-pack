@@ -1,13 +1,13 @@
 name = "GregTech Colony"
 author = "IcePrince1101"
-version = "0.5.1-draft"
+version = "0.6.1-draft"
 description = "GregTech Colony: GregTech CEu Modern, Create, колонии и приключения для небольшой компании. Minecraft 1.20.1, Forge."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5f55736ac9d694d457d17b9e0fd11edf790bb9ebe98756684c57fbc815b964d2"
+hash = "b80995adbda1eeedcbd8f30aa0d56d1e76d56f8c248f248371cc8f28fd25f1f7"
 
 [versions]
 forge = "47.4.29"
