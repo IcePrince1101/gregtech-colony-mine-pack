@@ -1088,6 +1088,31 @@
 		}
 		{
 			dependencies: [
+				"0000000000004502"
+			]
+			description: [
+				"Механик колонии. В рецепте мотор LV."
+			]
+			icon: "minecolonies:blockhutmechanic"
+			id: "0000000000004551"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "00000000000045D5"
+					type: "item"
+					item: "minecolonies:blockhutmechanic"
+				}
+			]
+			title: "Механик"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
 				"0000000000004409"
 			]
 			description: [

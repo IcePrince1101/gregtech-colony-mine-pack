@@ -118,6 +118,23 @@ ServerEvents.recipes(function (event) {
     P: 'gtceu:bronze_plate'
   }).id('gregtech_colony:colony_smeltery')
 
+  event.remove({ id: 'minecolonies:blockhutglassblower' })
+  event.shaped('minecolonies:blockhutglassblower', ['XTX', 'XGX', 'XPX'], {
+    X: '#minecraft:planks',
+    T: 'structurize:sceptergold',
+    G: 'minecraft:glass',
+    P: 'gtceu:bronze_plate'
+  }).id('gregtech_colony:colony_glassblower')
+
+  event.remove({ id: 'minecolonies:blockhutcrusher' })
+  event.shaped('minecolonies:blockhutcrusher', ['XTX', 'CIC', 'XPX'], {
+    X: '#minecraft:planks',
+    T: 'structurize:sceptergold',
+    C: 'minecraft:cobblestone',
+    I: 'minecraft:iron_ingot',
+    P: 'gtceu:bronze_plate'
+  }).id('gregtech_colony:colony_crusher')
+
   event.shaped('gtceu:lp_steam_macerator', ['BCB', 'PAP', 'BWB'], {
     B: 'gtceu:bronze_machine_casing',
     C: 'forbidden_arcanus:arcane_crystal',

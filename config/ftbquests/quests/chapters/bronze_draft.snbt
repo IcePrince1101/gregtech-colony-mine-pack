@@ -718,6 +718,56 @@
 				"0000000000004401"
 			]
 			description: [
+				"Стеклодув колонии. В рецепте бронзовая пластина."
+			]
+			icon: "minecolonies:blockhutglassblower"
+			id: "0000000000004460"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004461"
+					type: "item"
+					item: "minecolonies:blockhutglassblower"
+				}
+			]
+			title: "Стеклодув"
+			x: 7.6d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
+				"Дробильня колонии. В рецепте бронзовая пластина."
+			]
+			icon: "minecolonies:blockhutcrusher"
+			id: "0000000000004462"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Колония"
+			tasks: [
+				{
+					id: "0000000000004463"
+					type: "item"
+					item: "minecolonies:blockhutcrusher"
+				}
+			]
+			title: "Дробильня"
+			x: 7.6d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0000000000004401"
+			]
+			description: [
 				"Зайди в подземелье Dungeon Crawl."
 			]
 			icon: "minecraft:mossy_stone_bricks"

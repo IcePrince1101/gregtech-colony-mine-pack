@@ -82,6 +82,13 @@ ServerEvents.recipes(function (event) {
     T: 'gtceu:steel_plate'
   }).id('gregtech_colony:runic_altar')
 
+  event.remove({ id: 'minecolonies:blockhutmechanic' })
+  event.shaped('minecolonies:blockhutmechanic', ['XTX', 'XMX', 'XXX'], {
+    X: '#minecraft:planks',
+    T: 'structurize:sceptergold',
+    M: 'gtceu:lv_electric_motor'
+  }).id('gregtech_colony:colony_mechanic')
+
   event.remove({ id: 'minecolonies:blockhutuniversity' })
   event.shaped('minecolonies:blockhutuniversity', ['XTX', 'XCX', 'XBX'], {
     X: '#minecraft:planks',

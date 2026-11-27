@@ -23,12 +23,12 @@ jobs:
           git diff --exit-code
 
       - name: Export Modrinth pack
-        run: packwiz modrinth export -o gregtech-colony-0.6.0-draft.mrpack
+        run: packwiz modrinth export -o gregtech-colony-0.6.1-draft.mrpack
 
       - uses: actions/upload-artifact@v4
         with:
           name: gregtech-colony-mrpack
-          path: gregtech-colony-0.6.0-draft.mrpack
+          path: gregtech-colony-0.6.1-draft.mrpack
 
   recipe-audit:
     runs-on: ubuntu-latest

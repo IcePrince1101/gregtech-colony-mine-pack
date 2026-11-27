@@ -1,0 +1,384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "magic_energy"
+	group: "000000000000309F"
+	icon: "botania:endoflame"
+	id: "00000000000041F5"
+	order_index: 46
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Справочник магических ресурсов. Квест открывается вместе со своей эпохой."
+				"Круг можно пропустить. Награды нет."
+			]
+			icon: "ftbquests:book"
+			id: "0000000000004701"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.2d
+			subtitle: "Справочник"
+			tasks: [
+				{
+					id: "0000000000004780"
+					type: "checkmark"
+				}
+			]
+			title: "Как читать"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Жжёт уголь и похожее топливо. Около 3 маны за тик в рядом стоящий пул."
+				"Простой и спокойный. Остальные цветы смотри в лексиконе."
+			]
+			icon: "botania:endoflame"
+			id: "0000000000004702"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004781"
+					type: "item"
+					item: "botania:endoflame"
+				}
+			]
+			title: "Эндопламя"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Пьёт воду и даёт около 1 маны за тик."
+				"Слабее эндопламени и со временем вянет."
+			]
+			icon: "botania:hydroangeas"
+			id: "0000000000004703"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004782"
+					type: "item"
+					item: "botania:hydroangeas"
+				}
+			]
+			title: "Гидроангея"
+			x: 2.2d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Глотает лаву и выдаёт ману пачкой, потом долго остывает."
+				"Выгодно у источника лавы, бесполезно вдали от него."
+			]
+			icon: "botania:thermalily"
+			id: "0000000000004704"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004783"
+					type: "item"
+					item: "botania:thermalily"
+				}
+			]
+			title: "Термалилия"
+			x: 4.4d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"000000000000420C"
+			]
+			description: [
+				"Ест разную еду. Чем сытнее порция, тем больше маны."
+				"Одинаковая еда подряд даёт всё меньше."
+			]
+			icon: "botania:gourmaryllis"
+			id: "0000000000004705"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004784"
+					type: "item"
+					item: "botania:gourmaryllis"
+				}
+			]
+			title: "Гурмарилис"
+			x: 6.6d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Банка хранит источник. Крафтится из стекла и слэбов архвуда."
+				"Сама источник не производит."
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "0000000000004706"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004785"
+					type: "item"
+					item: "ars_nouveau:source_jar"
+				}
+			]
+			title: "Банка источника"
+			x: 0.0d
+			y: 3.8d
+		}
+		{
+			dependencies: [
+				"0000000000004219"
+			]
+			description: [
+				"Огонь духов разводят словарём. На нём сушат мел и чернила."
+				"Это не ток и не мана, а топливо ритуалов."
+			]
+			icon: "occultism:spirit_fire"
+			id: "0000000000004707"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004786"
+					type: "item"
+					item: "occultism:spirit_fire"
+				}
+			]
+			title: "Огонь духов"
+			x: 2.2d
+			y: 3.8d
+		}
+		{
+			dependencies: [
+				"0000000000004204"
+			]
+			description: [
+				"Арканный кристалл лежит в мире."
+				"Им кормят паровой мацератор. Позже он же топливо лапидарного динамо."
+			]
+			icon: "forbidden_arcanus:arcane_crystal"
+			id: "0000000000004708"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Каменный век"
+			tasks: [
+				{
+					id: "0000000000004787"
+					type: "item"
+					item: "forbidden_arcanus:arcane_crystal"
+				}
+			]
+			title: "Арканный кристалл"
+			x: 4.4d
+			y: 3.8d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Пул копит ману, распространитель шлёт её лучом."
+				"В рецептах бронза и андезитовый корпус. Без цветка пул пуст."
+			]
+			icon: "botania:mana_pool"
+			id: "0000000000004709"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "0000000000004788"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "0000000000004789"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+			]
+			title: "Пул и распространитель"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Жертвенный нож забирает жизнь у игрока и кладёт LP в алтарь."
+				"Алтарь этой эпохи требует бронзовый корпус. Самопожертвование медленное и больно."
+			]
+			icon: "bloodmagic:sacrificialdagger"
+			id: "000000000000470A"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "000000000000478A"
+					type: "item"
+					item: "bloodmagic:sacrificialdagger"
+				}
+			]
+			title: "Жертвенный нож"
+			x: 2.2d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Агрономическая связь копит источник, пока рядом растут посевы."
+				"Нужен самоцвет источника. Банка рядом принимает запас."
+			]
+			icon: "ars_nouveau:agronomic_sourcelink"
+			id: "000000000000470B"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "000000000000478B"
+					type: "item"
+					item: "ars_nouveau:agronomic_sourcelink"
+				}
+			]
+			title: "Связь с посевами"
+			x: 4.4d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"000000000000420B"
+			]
+			description: [
+				"Алтарь духов принимает души с охоты и отдаёт духов для рецептов."
+				"Тигель варит из них дальше. Охота вручную, запаса нет без убийств."
+			]
+			icon: "malum:spirit_altar"
+			id: "000000000000470C"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Бронза"
+			tasks: [
+				{
+					id: "000000000000478C"
+					type: "item"
+					item: "malum:spirit_altar"
+				}
+				{
+					id: "000000000000478D"
+					type: "item"
+					item: "malum:spirit_crucible"
+				}
+			]
+			title: "Духи Malum"
+			x: 6.6d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Таблица маны носит запас с собой."
+				"Её заряжает пул. Генератором она не является."
+			]
+			icon: "botania:mana_tablet"
+			id: "000000000000470D"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "000000000000478E"
+					type: "item"
+					item: "botania:mana_tablet"
+				}
+			]
+			title: "Таблица маны"
+			x: 0.0d
+			y: 8.2d
+		}
+		{
+			dependencies: [
+				"0000000000004409"
+			]
+			description: [
+				"Руна самопожертвования усиливает нож, но алтарь должен быть второго яруса."
+				"Для яруса нужны руны скорости, а для руны — усиленный сланец этой эпохи."
+			]
+			icon: "bloodmagic:selfsacrificerune"
+			id: "000000000000470E"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "LV"
+			tasks: [
+				{
+					id: "000000000000478F"
+					type: "item"
+					item: "bloodmagic:selfsacrificerune"
+				}
+			]
+			title: "Руна самопожертвования"
+			x: 2.2d
+			y: 8.2d
+		}
+	]
+	subtitle: "Мана, кровь, источник и духи"
+	title: "Магическая энергия"
+}
