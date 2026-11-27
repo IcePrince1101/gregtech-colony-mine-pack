@@ -10,39 +10,8 @@
 	quests: [
 		{
 			dependencies: [
-				"000000000000300B"
-			]
-			description: [
-				"Сырой камень душ Malum лежит в мире как свой минерал, не как жила GregTech. Алхимия душ не питает EU-машины и не заменяет домну. Она начинается, когда каменные инструменты уже позволяют уйти от спавна."
-			]
-			icon: "malum:raw_soulstone"
-			id: "000000000000304D"
-			rewards: [
-				{
-					id: "00000000000030D4"
-					table_id: 12436
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Malum"
-			tasks: [
-				{
-					id: "000000000000304E"
-					type: "item"
-					item: "malum:raw_soulstone"
-				}
-			]
-			title: "Камень душ"
-			x: 0
-			y: 0
-		}
-		{
-			dependencies: [
-				"000000000000304D"
-				"0000000000003015"
+				"000000000000421B"
+				"000000000000420B"
 			]
 			description: [
 				"Энциклопедия объясняет духов, руны и алтарь. Это справочник мода, не рецепт GT. Души не конвертируются в EU сами собой."
@@ -73,70 +42,8 @@
 		}
 		{
 			dependencies: [
-				"000000000000304F"
-			]
-			description: [
-				"Алтарь духов собирает вещи Malum из душ и камня. Ему нужен уже понятный ранний металл, поэтому он стоит после коксовой печи, но паровой котёл ему не требуется."
-			]
-			icon: "malum:spirit_altar"
-			id: "0000000000003051"
-			rewards: [
-				{
-					id: "00000000000030D6"
-					table_id: 12437
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Крафт Malum"
-			tasks: [
-				{
-					id: "0000000000003052"
-					type: "item"
-					item: "malum:spirit_altar"
-				}
-			]
-			title: "Алтарь духов"
-			x: 0
-			y: 3.2f
-		}
-		{
-			dependencies: [
-				"000000000000300B"
-			]
-			description: [
-				"Блокнот Ars Nouveau вводит источник, глифы и башню заклинаний. Магия источника расходует свой ресурс, не EU. Ранние глифы не заменяют ступку и печь."
-			]
-			icon: "ars_nouveau:worn_notebook"
-			id: "0000000000003053"
-			rewards: [
-				{
-					id: "00000000000030D7"
-					table_id: 12436
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Ars Nouveau"
-			tasks: [
-				{
-					id: "0000000000003054"
-					type: "item"
-					item: "ars_nouveau:worn_notebook"
-				}
-			]
-			title: "Потрёпанный блокнот"
-			x: 2.6f
-			y: 0
-		}
-		{
-			dependencies: [
-				"0000000000003053"
-				"0000000000003015"
+				"000000000000421C"
+				"000000000000420B"
 			]
 			description: [
 				"Камень источника копят аппараты Ars, не генераторы GT. Он тратится на глифы. Запас камней не ускоряет коксование."
@@ -168,7 +75,7 @@
 		{
 			dependencies: [
 				"0000000000003055"
-				"000000000000301B"
+				"0000000000004402"
 			]
 			description: [
 				"Книга новичка держит собранные глифы. Ars Creo связывает часть этой магии с механизмами Create, если кинетическая ветка вообще построена. Без источника книга пустая."
@@ -199,38 +106,7 @@
 		}
 		{
 			dependencies: [
-				"000000000000301B"
-			]
-			description: [
-				"Живой камень, строительный материал Botania. Мана производится цветами и не заменяет паровой котёл. Лексикон дальше объясняет пулы и распространители."
-			]
-			icon: "botania:livingrock"
-			id: "0000000000003059"
-			rewards: [
-				{
-					id: "00000000000030DA"
-					table_id: 12439
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Botania"
-			tasks: [
-				{
-					id: "000000000000305A"
-					type: "item"
-					item: "botania:livingrock"
-				}
-			]
-			title: "Живой камень"
-			x: 5.2f
-			y: 1.6f
-		}
-		{
-			dependencies: [
-				"0000000000003059"
+				"000000000000420E"
 			]
 			description: [
 				"Лексикон описывает потоки маны, цветы и алтари. Это параллельная энергия. Предметы террастали и эльфийской ветки живут внутри Botania и не открывают корпуса MV."
@@ -261,195 +137,7 @@
 		}
 		{
 			dependencies: [
-				"000000000000305B"
-				"0000000000003029"
-			]
-			description: [
-				"Пул хранит ману и кормит алтарь и распространитель. Он не принимает EU и не отдаёт EU. Рядом с электрическим цехом это отдельный контур."
-			]
-			icon: "botania:mana_pool"
-			id: "000000000000305D"
-			rewards: [
-				{
-					id: "00000000000030DC"
-					table_id: 12441
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Накопитель, не батарея EU"
-			tasks: [
-				{
-					id: "000000000000305E"
-					type: "item"
-					item: "botania:mana_pool"
-				}
-			]
-			title: "Пул маны"
-			x: 5.2f
-			y: 4.8f
-		}
-		{
-			dependencies: [
-				"0000000000003029"
-			]
-			description: [
-				"Кинжал открывает жизнь как ресурс Blood Magic. Алтарь крови требует этот ресурс и свою сланцевую линейку. В EU кинжал ничего не генерирует."
-			]
-			icon: "bloodmagic:sacrificialdagger"
-			id: "000000000000305F"
-			rewards: [
-				{
-					id: "00000000000030DD"
-					table_id: 12441
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Blood Magic"
-			tasks: [
-				{
-					id: "0000000000003060"
-					type: "item"
-					item: "bloodmagic:sacrificialdagger"
-				}
-			]
-			title: "Жертвенный кинжал"
-			x: 7.8f
-			y: 3.2f
-		}
-		{
-			dependencies: [
-				"000000000000305F"
-			]
-			description: [
-				"Алтарь перерабатывает сланец по уровням. Каждый уровень алтаря просит больше инфраструктуры вокруг, это не один верстак. Демонический сланец и старшие кристаллы остаются внутри этой лестницы."
-			]
-			icon: "bloodmagic:altar"
-			id: "0000000000003061"
-			rewards: [
-				{
-					id: "00000000000030DE"
-					table_id: 12441
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Сланец и жизнь"
-			tasks: [
-				{
-					id: "0000000000003062"
-					type: "item"
-					item: "bloodmagic:altar"
-				}
-			]
-			title: "Кровавый алтарь"
-			x: 7.8f
-			y: 4.8f
-		}
-		{
-			dependencies: [
-				"0000000000003015"
-			]
-			description: [
-				"Словарь объясняет мелки, ритуалы и связанных духов. Дух-работник может таскать и крафтить, но рецепты GregTech он не обходит: у них свои станки и напряжение."
-			]
-			icon: "occultism:dictionary_of_spirits"
-			id: "0000000000003063"
-			rewards: [
-				{
-					id: "00000000000030DF"
-					table_id: 12437
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Occultism"
-			tasks: [
-				{
-					id: "0000000000003064"
-					type: "item"
-					item: "occultism:dictionary_of_spirits"
-				}
-			]
-			title: "Словарь духов"
-			x: -2.6f
-			y: 1.6f
-		}
-		{
-			dependencies: [
-				"0000000000003063"
-				"000000000000301B"
-			]
-			description: [
-				"Белый мел рисует базовый круг. Золотой, красный и пурпурный мелки поднимают ранг духа. Ритуал потребляет предметы круга, а не EU."
-			]
-			icon: "occultism:chalk_white"
-			id: "0000000000003065"
-			rewards: [
-				{
-					id: "00000000000030E0"
-					table_id: 12439
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Круг Occultism"
-			tasks: [
-				{
-					id: "0000000000003066"
-					type: "item"
-					item: "occultism:chalk_white"
-				}
-			]
-			title: "Мел ритуала"
-			x: -2.6f
-			y: 3.2f
-		}
-		{
-			dependencies: [
-				"0000000000003033"
-			]
-			description: [
-				"Кристалл, валюта и материал Forbidden and Arcanus. Кузница Гефеста рядом с ним усиливает предметы своим деревом улучшений. Это не уровень напряжения и не схема."
-			]
-			icon: "forbidden_arcanus:arcane_crystal"
-			id: "0000000000003067"
-			rewards: [
-				{
-					id: "00000000000030E1"
-					table_id: 12442
-					team_reward: false
-					type: "random"
-				}
-			]
-			shape: "pentagon"
-			size: 1.0d
-			subtitle: "Forbidden and Arcanus"
-			tasks: [
-				{
-					id: "0000000000003068"
-					type: "item"
-					item: "forbidden_arcanus:arcane_crystal"
-				}
-			]
-			title: "Арканный кристалл"
-			x: 10.4f
-			y: 0
-		}
-		{
-			dependencies: [
-				"0000000000003067"
+				"0000000000004708"
 				"000000000000303F"
 			]
 			description: [
@@ -481,7 +169,7 @@
 		}
 		{
 			dependencies: [
-				"0000000000003029"
+				"0000000000004409"
 			]
 			description: [
 				"Заметки Thaumon заменяют привычный таумономикон: исследование идёт через них и янтарь, без отдельного порта Thaumcraft. Аспекты не плавятся в пыль GT."
