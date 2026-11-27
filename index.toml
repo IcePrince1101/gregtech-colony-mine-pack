@@ -14,15 +14,15 @@ hash = "845f855fcb95a06c971f93495ec31cf48321465e8e4464f0dba3cd2a33f53166"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/bronze_draft.snbt"
-hash = "33eaa2cb8e63f41a93eb51fd96001a04e93e3bc69cc61f0bb85a65e09f463111"
+hash = "d6dc3039a0c5d1ff06dc02eb8e2346fde670913c1819c6713668c711e99ad72d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/colony.snbt"
-hash = "d51ef058c46aaf42577fde3513adf134071d4a3019edc3494d1612d64e1a7f31"
+hash = "8eda60e776b8a4584819b370f5a2cbd20230b9d8dd06e0c706624e85c2c06da7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/dungeons.snbt"
-hash = "3d5c06dda25f7c353c45406dc90a647cf868de69f82aec8d0015d7e80794b8a9"
+hash = "20b86c10d738962a198cbebd1cf32a1b950b28e4f9960990c248da86ba3da570"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/energy.snbt"
@@ -37,10 +37,6 @@ file = "config/ftbquests/quests/chapters/hv.snbt"
 hash = "72ac476b340bd96754c75380093be6a266588ccaa67ba2b7bee1eded87765711"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/intro.snbt"
-hash = "aba63dfff24026c4082c60ec91d3da61febdb3bb3a40249ab7c2cf3870569ce0"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/iv.snbt"
 hash = "c7c4978a0dd7d657c26c94065ceec0d7bb84829f8b8d20d723b13a46ff0051de"
 
@@ -49,16 +45,12 @@ file = "config/ftbquests/quests/chapters/late.snbt"
 hash = "ad2c0ed43c96ee437f3fbebccdfa3c52bb3d3c796701045aee4d7674d96e5b08"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/lv.snbt"
-hash = "aebc7ae1972f4cf6b3ac5f05ce031ff111a9443da90598e71d82e4bfbb7f8e09"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/lv_draft.snbt"
 hash = "64d4169e8f8c4e482206cac13b650901fd0290f82b62fb9b800739bd7e205f0b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic.snbt"
-hash = "9bcf66c6a473aabc3941e4422432fbbb6379774aaf55d1d65578ea2e0dca01b1"
+hash = "966f1b4fe186ad797742a534b1f14a9ac109672606f2682e7cdb8896b52fbe18"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic_energy.snbt"
@@ -66,19 +58,11 @@ hash = "5c596eba606090458f0ac0aabb21be422fb4b2156ec8e3a1d6eb48d45498f3a5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mv.snbt"
-hash = "f6f7044ce6117402b970f94e1a8fe1682333f4208996496f90ad489a7a1520d4"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/steam.snbt"
-hash = "fd47682ef17c4af1bc787fb760017b85e306cc677b75520efffacbdc8944e30c"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/stone.snbt"
-hash = "7afc392283e738984d9c28aa46f20b20380c9b07f6622c4d992cbd32703d3b43"
+hash = "9063deefdb6e5392e12d5dc5d176c7b0d27b0854b553a94ccdce7a725d952b11"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/stone_draft.snbt"
-hash = "8498653301971fa9f207afd9a008daf32ab45eaa09cce0d201a029daa233d25f"
+hash = "d3dc4319f55a99e84fd4e854923da0824627687bda4b05f0af68ff281a748969"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
